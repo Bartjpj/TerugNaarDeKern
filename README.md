@@ -1,3 +1,3 @@
 # TerugNaarDeKern
 Genetica project 2019-2020
-Mel: setup werkt
+Mel: setup werkt 2.0
