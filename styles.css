@@ -55,7 +55,12 @@ h1{
 .right{
   float: right;
   padding-right: 2vw;
-  padding-bottom: 2vh; 
+  padding-bottom: 2vh;
+}
+.left{
+  float: left;
+  padding-left: 2vw;
+  padding-bottom: 2vh;
 }
 .wit{
   color: aliceblue;
