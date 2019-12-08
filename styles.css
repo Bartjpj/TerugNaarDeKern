@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 #body_keuzehulp {
   background-color: green;
@@ -21,7 +22,9 @@ h1{
   letter-spacing: 5px;
   text-align: center;
 }
-
+.hoofdstuktitel{
+  margin: 5%;
+}
 .background-center{
   /* Deze gaat over de gehele achtergrond */
   width: 100%;
@@ -30,16 +33,30 @@ h1{
   background-image: url("Imgs/hs1/background-purpleorbs.png");
   background-size: cover;
 }
+.background-right{
+  width: 70%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  background-image: url("Imgs/hs1/background-purpleorbs.png");
+  background-size: cover;
+}
 .backgroundorbs{
   width: 10%;
 }
-.center-image{
+.img-center{
   text-align: center;
   margin-top: 10%;
   width: 15%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.img-right{
+  float: right;
+  margin-top: 15%;
+  display: absolute;
+  margin-right: 15%;
 }
 .earth{
   width: 100%;
@@ -62,6 +79,24 @@ h1{
   padding-left: 2vw;
   padding-bottom: 2vh;
 }
+.div-links{
+  width: 50%;
+  padding: 20vh 0 0 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+
+}
+.tekst-links{
+  width: 70%;
+  height: auto;
+  margin-top: 15%;
+  /* position: absolute; */
+}
+
+
+
 .wit{
   color: aliceblue;
 }
