@@ -2,7 +2,7 @@
 .containerContainer{
   height: 80vh;
   width: auto;
-  margin: 5%;
+  margin: 0 5% 5% 5%;
 }
 
 .flex-container {
@@ -25,17 +25,74 @@
     border: grey 2px solid;
     margin: 10px;
     color: white;
-    font-weight: bold;
     font-size: 1.5em;
-    text-align: bottom;
     flex: 1 0 auto;
-    height:auto;
+    height: auto;
+    background-color: grey;
+    cursor: pointer;
+    bottom: 0;
+}
+.vraag-tag{
+  /* deze moet beneden komen maar het lukt niet :( */
 }
 .flex-item:before {
     content:'';
     float:left;
     padding-top:100%;
 }
+h1{
+  /* margin: 0; */
+  font-size: 3vh;
+}
+
+/* --------------------- POPUP VRAAG */
+.popup-vraag{
+  width: 40%; height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  background-color: red;
+  cursor: pointer;
+
+  display: none;
+  z-index: 100;
+
+}
+.vraag-titel{
+  font-size: 5vh;
+  letter-spacing: 5px;
+  margin-left: 10%;
+}
+.vraag-tekst, .weetje-tekst{
+  margin: 10%;
+}
+
+.popup-weetje{
+  width: 30%; height: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 40%;
+  background-color: purple;
+
+  cursor: pointer;
+
+  display: none;
+  z-index: 101;
+}
+.overlay-dark{
+  width: 100%;
+  height: 100vh;
+  opacity: 0.7;
+  background-color: black;
+  display: none;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 99;
+
+  cursor: pointer;
+  /* voor custom: cursor:url('...')  */
+}
+
 @media only screen and (max-width: 768px) {
 
 .flex-container{
