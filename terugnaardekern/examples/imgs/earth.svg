@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="575" height="375" viewBox="0 0 375 375">
+  <g id="earth" transform="translate(-1337 -1403)">
+    <ellipse id="background" cx="163" cy="163.5" rx="163" ry="163.5" transform="translate(1361 1427)" fill="#032160"/>
+    <g id="earth-land">
+      <animateMotion path="M 3 0 -25 0 L 3 0" begin ="0s" dur="15s" fill="freeze" repeatCount="indefinite"/>
+
+      <animate attributeType="CSS" attributeName="opacity" values="0.50;0.99;0.50" dur="8s" repeatCount="indefinite"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="119" height="39" rx="19.5" transform="translate(1382 1502)" fill="#25b547"/>
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="83" height="39" rx="19.5" transform="translate(1418 1470)" fill="#25b547"/>
+      <path id="Path_3" data-name="Path 3" d="M10.391,0s9.08-.086,13.629,0,4.833-8.729,0-8.587,37.963.142,33.982,0S55.3-.228,58,0a38.183,38.183,0,0,0,5.5,0,19.5,19.5,0,0,1,0,39H10.391a19.5,19.5,0,0,1,0-39Z" transform="translate(1391 1549)" fill="#25b547"/>
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="130" height="39" rx="19.5" transform="translate(1411 1661)" fill="#25b547"/>
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="83" height="39" rx="19.5" transform="translate(1420 1699)" fill="#25b547"/>
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="140" height="53" rx="20" transform="translate(1568 1558)" fill="#25b547"/>
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="37" height="22" rx="11" transform="translate(1589 1509)" fill="#25b547"/>
+    </g>
+    <g id="earth-sky">
+      <animateMotion path="M -21 0 12 0 L -21 0" begin ="0s" dur="15s" fill="freeze" repeatCount="indefinite"/>
+
+      <animate attributeType="CSS" attributeName="opacity" values="0.99;0.50;0.99" dur="8s" repeatCount="indefinite"/>
+      <path id="Path_4" data-name="Path 4" d="M8,0H50a8,8,0,0,1,8,8V9a8,8,0,0,1-8,8s-7.573-.028-11.293,0-3.275,10.094,0,10.085-24.84.062-21.187,0,4.5-10.11,0-10.085S8,17,8,17A8,8,0,0,1,0,9V8A8,8,0,0,1,8,0Z" transform="translate(1580 1628)" fill="#fff"/>
+
+      <rect id="Rectangle_9" data-name="Rectangle 9" width="118" height="17" rx="8" transform="translate(1566 1654)" fill="#fff"/>
+      <path id="Path_5" data-name="Path 5" d="M8,0H50a8,8,0,0,1,8,8V9a8,8,0,0,1-8,8s-7.573-.028-11.293,0-3.275,10.094,0,10.085-24.84.062-21.187,0,4.5-10.11,0-10.085S8,17,8,17A8,8,0,0,1,0,9V8A8,8,0,0,1,8,0Z" transform="translate(1522 1503) rotate(180)" fill="#fff"/>
+      <rect id="Rectangle_13" data-name="Rectangle 13" width="118" height="17" rx="8" transform="translate(1536 1477) rotate(180)" fill="#fff"/>
+      <rect id="Rectangle_10" data-name="Rectangle 10" width="46" height="25" rx="8" transform="translate(1444 1574)" fill="#fff"/>
+      <rect id="Rectangle_11" data-name="Rectangle 11" width="101" height="15" rx="7.5" transform="translate(1361 1613)" fill="#fff"/>
+      <rect id="Rectangle_12" data-name="Rectangle 12" width="67" height="15" rx="7.5" transform="translate(1439 1681)" fill="#fff"/>
+    </g>
+    <g id="atomos" transform="translate(1337 1403)" fill="none" stroke="#001541" stroke-width="30">
+      <circle cx="187.5" cy="187.5" r="187.5" stroke="none"/>
+      <circle cx="187.5" cy="187.5" r="172.5" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/WebDevSimplified/Page-Transitions-and-Animations-With-Swup#readme",
   "dependencies": {
+    "@swup/js-plugin": "^1.0.4",
+    "swmpjs": "^1.2.3",
     "swup": "^2.0.8"
   }
 }
