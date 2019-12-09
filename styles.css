@@ -1,12 +1,101 @@
 body {
   overflow-x: hidden;
   background-color: black;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 #body_keuzehulp {
   background-color: green;
   width: auto;
   height: max-content;
 }
+
+/* HOOFDSTUK 1 --------------------------------------*/
+#body_index{
+  height: 100%;
+}
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7vh;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.hoofdstuktitel{
+  margin: 5%;
+}
+.background-center{
+  /* Deze gaat over de gehele achtergrond */
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-image: url("Imgs/hs1/background-purpleorbs.png");
+  background-size: cover;
+}
+.background-right{
+  width: 70%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  background-image: url("Imgs/hs1/background-purpleorbs.png");
+  background-size: cover;
+}
+.backgroundorbs{
+  width: 10%;
+}
+.img-center{
+  text-align: center;
+  margin-top: 10%;
+  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-right{
+  float: right;
+  margin-top: 15%;
+  display: absolute;
+  margin-right: 15%;
+}
+.earth{
+  width: 100%;
+}
+.nav{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+}
+.right{
+  float: right;
+  padding-right: 2vw;
+  padding-bottom: 2vh;
+}
+.left{
+  float: left;
+  padding-left: 2vw;
+  padding-bottom: 2vh;
+}
+.div-links{
+  width: 50%;
+  padding: 20vh 0 0 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+
+}
+.tekst-links{
+  width: 70%;
+  height: auto;
+  margin-top: 15%;
+  /* position: absolute; */
+}
+
+
 
 .wit{
   color: aliceblue;
@@ -15,13 +104,13 @@ body {
 .transition-fade {
   opacity: 1;
   transition: 500ms;
-  transform: translateX(0);
-  transform-origin: left;
+  /* transform: translateX(0%);
+  transform-origin: left; */
 }
 
 html.is-animating .transition-fade {
-  opacity: 1;
-  transform: translateY(100%);
+  opacity: 0;
+  /* transform: translateY(100%); */
 }
 
 html.is-leaving .transition-fade {
