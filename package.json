@@ -1,30 +1,54 @@
 {
-  "name": "page-transitions-and-animations-with-swup-master",
-  "version": "1.0.0",
-  "description": "Demonstrating the use of the swup javascript library to create smooth page transitions.",
-  "main": "script.js",
+  "name": "fullpage.js",
+  "version": "3.0.8",
+  "description": "Create beautiful fullscreen scrolling websites",
+  "main": "dist/fullpage.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WebDevSimplified/Page-Transitions-and-Animations-With-Swup.git"
+    "url": "git@github.com:alvarotrigo/fullPage.js.git"
   },
   "keywords": [
-    "animation",
-    "transition",
-    "swup",
-    "javascript"
+    "jquery",
+    "javacript",
+    "scrolling",
+    "single_page",
+    "onepage",
+    "fullpage",
+    "fullpagejs",
+    "one_page",
+    "sliding",
+    "snap",
+    "scroll",
+    "swipe",
+    "mousewheel",
+    "sections",
+    "slides",
+    "slidehow"
   ],
-  "author": "WebDevSimplified",
-  "license": "ISC",
+  "files": [
+    "vendors",
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "authors": [
+    "Alvaro Trigo https://github.com/alvarotrigo"
+  ],
+  "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/WebDevSimplified/Page-Transitions-and-Animations-With-Swup/issues"
+    "url": "https://github.com/alvarotrigo/fullPage.js/issues"
   },
-  "homepage": "https://github.com/WebDevSimplified/Page-Transitions-and-Animations-With-Swup#readme",
-  "dependencies": {
-    "@swup/js-plugin": "^1.0.4",
-    "swmpjs": "^1.2.3",
-    "swup": "^2.0.8"
+  "homepage": "https://github.com/alvarotrigo/fullPage.js",
+  "namespace": "fullpage_api",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0"
   }
 }
