@@ -2,7 +2,7 @@
   <g id="earth" transform="translate(-1337 -1403)">
     <ellipse id="background" cx="163" cy="163.5" rx="163" ry="163.5" transform="translate(1361 1427)" fill="#032160"/>
     <g id="earth-land">
-      <animateMotion path="M 3 0 -25 0 L 3 0" begin ="0s" dur="15s" fill="freeze" repeatCount="indefinite"/>
+      <animateMotion path="M 3 0 -22 0 L 3 0" begin ="0s" dur="15s" fill="freeze" repeatCount="indefinite"/>
 
       <animate attributeType="CSS" attributeName="opacity" values="0.50;0.99;0.50" dur="8s" repeatCount="indefinite"/>
       <rect id="Rectangle_2" data-name="Rectangle 2" width="119" height="39" rx="19.5" transform="translate(1382 1502)" fill="#25b547"/>
