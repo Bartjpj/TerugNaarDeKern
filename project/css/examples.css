@@ -31,15 +31,15 @@ caption,th {
     text-align: left;
 
 }
-h1,h2,h3,h4,h5,h6 {
+/* h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
     font-size: 100%;
     margin:0;
     padding:0;
     color:white;
     text-transform: uppercase;
+} */
 
-}
 q:before,q:after {
     content:'';
 }
@@ -248,14 +248,3 @@ body.fp-viewing-firstPage #menu{
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
 	padding: 0 0 5px 0;
 }
-
-
-
-/* Demos Menu
- * --------------------------------------- */
- #demosMenu{
-	position:fixed;
-	bottom: 10px;
-	right:10px;
-	z-index: 999;
- }
