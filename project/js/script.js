@@ -1,5 +1,23 @@
-// import Swup from 'swup';
-// const swup = new Swup();
+function revealspeechbubbleafter() {
+  var speechbubble = $('#speechbubble');
+  $(speechbubble).css("visibility", "visible");
+  $(speechbubble).addClass("text-pop-up-tl");
+}
+
+function loopskipbtn() {
+       var skipbtn = $('#skipstorybtn');
+       skipbtn.animate({opacity:'1'}, 3000);
+       skipbtn.animate({opacity:'0'}, 1000, loopskipbtn);
+    }
+
+setTimeout("revealspeechbubbleafter()", 3000);
+setTimeout("loopskipbtn()", 4500);
+
+var myItems;
+    $.getJSON('namen.json', function(data) {
+        myItems = data.items;
+        console.log(myItems);
+    });
 
 $('.flex-item').click(function(){
   $('.overlay-dark').css('display', 'block');

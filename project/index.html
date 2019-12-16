@@ -4,10 +4,18 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Terug naar de kern</title>
+	<meta name="author" content="Matthew Howell" />
+	<meta name="description" content="fullPage continuous scrolling demo." />
+	<meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
+	<meta name="Resource-type" content="Document" />
+
 
 	<link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
-	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/transitions.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -15,95 +23,121 @@
 		</script>
 	<![endif]-->
 </head>
+
 <body>
 
-<ul id="menu">
-	<!-- <li class="navnumber">1</li>
+	<ul id="menu">
+		<!-- <li class="navnumber">1</li>
 	<li data-menuanchor="firstPage" class="active"><a href="#firstPage"></a></li> -->
 
-	<li class="navnumber">1</li>
-	<li data-menuanchor="secondPage" class="active"><a href="#secondPage"></a></li>
+		<li class="navnumber">1</li>
+		<li data-menuanchor="secondPage" class="active"><a href="#secondPage"></a></li>
 
-	<li class="navnumber">2</li>
-	<li data-menuanchor="3rdPage" class="active"><a href="#3rdPage"></a></li>
+		<li class="navnumber">2</li>
+		<li data-menuanchor="3rdPage" class="active"><a href="#3rdPage"></a></li>
 
-	<li class="navnumber">3</li>
-	<li data-menuanchor="4thPage" class="active"><a href="#4thPage"></a></li>
+		<li class="navnumber">3</li>
+		<li data-menuanchor="4thPage" class="active"><a href="#4thPage"></a></li>
 
-	<li class="navnumber">4</li>
-	<li data-menuanchor="5thPage" class="active"><a href="#5thPage"></a></li>
-</ul>
+		<li class="navnumber">4</li>
+		<li data-menuanchor="5thPage" class="active"><a href="#5thPage"></a></li>
+	</ul>
 
-<div id="fullpage">
-	<div class="section " id="section0">
-		<h1>TERUG NAAR DE KERN</h1>
-		<img src="imgs/earth.svg" alt="earth" />
-		<!-- <p>Continuous Scrolling Enabled</p> -->
-		<!-- <img src="imgs/fullPage.png" alt="fullPage" /> -->
 
-		<div class="nav">
-			<a href="about.html">Go About</a>
-			<a class="right"href="keuzepagina.html">Naar de Keuzehulp</a>
-			<!-- <button class="transition-swipe">SKIP STORY -></button> -->
-		  </div>
+	<div id="fullpage">
+		<div class="section" id="section0">
 
-	</div>
-	<div class="section" id="section1">
-		<div class="intro">
-			<h1>1 Intro</h1>
-			<p>Er zijn hier 7,5 miljard mensen en iedereen is uniek, jij dus ook.</p>
+			<div class="container">
+				<div class="row">
+
+					<div class="col col-12">
+						<h1 class="text-focus-in">De wereld van genetica</h1>
+					</div>
+
+					<div class="col col-12">
+						<img id="earth" src="imgs/earth.svg" alt="earth" />
+					</div>
+
+					<div class="col col-4">
+						<img id="speechbubble" src="imgs/speechbubble.svg" alt="speechbubble" />
+					</div>
+
+					<div class="col col-12">
+						<div class="float-right">
+							<a id="skipstorybtn" class="text-secondary" href="keuzepagina.html"> <u>Skip het verhaal</u> </a>
+						</div>
+    			</div>
+
+				</div>
+			</div>
+
+
+
+		</div>
+		<div class="section" id="section1">
+			<div class="intro">
+				<h1>1 Intro</h1>
+				<p>Er zijn hier 7,5 miljard mensen en iedereen is uniek, jij dus ook.</p>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<div class="intro">
+				<h1>Scroll Down</h1>
+				<p>And it will animate down to the first section</p>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<div class="intro">
+				<h1>Scroll Down</h1>
+				<p>And it will animate down to the first section</p>
+			</div>
+		</div>
+		<div class="section" id="section4">
+			<div class="intro">
+				<h1>Scroll Down</h1>
+				<p>And it will animate down to the first section</p>
+			</div>
+		</div>
+		<div class="section" id="section5">
+			<div class="intro">
+				<h1>Scroll Down</h1>
+				<p>And it will animate down to the first section</p>
+			</div>
 		</div>
 	</div>
-	<div class="section" id="section2">
-		<div class="intro">
-			<h1>Scroll Down</h1>
-			<p>And it will animate down to the first section</p>
-		</div>
 	</div>
-	<div class="section" id="section3">
-		<div class="intro">
-			<h1>Scroll Down</h1>
-			<p>And it will animate down to the first section</p>
-		</div>
-	</div>
-	<div class="section" id="section4">
-		<div class="intro">
-			<h1>Scroll Down</h1>
-			<p>And it will animate down to the first section</p>
-		</div>
-	</div>
-	<div class="section" id="section5">
-		<div class="intro">
-			<h1>Scroll Down</h1>
-			<p>And it will animate down to the first section</p>
-		</div>
-	</div>
-</div>
 
 
-<script type="text/javascript" src="../dist/fullpage.js"></script>
-<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript" src="../dist/fullpage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
 
-<script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-      sectionsColor: ['#000B22', '#000B22', '#7BAABE', 'whitesmoke', '#ccddff'],
-      anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage','5thPage', 'lastPage'],
-      menu: '#menu',
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+	<script type="text/javascript">
+		var myFullpage = new fullpage('#fullpage', {
+			sectionsColor: ['#000B22', '#000B22', '#7BAABE', 'whitesmoke', '#ccddff'],
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', 'lastPage'],
+			menu: '#menu',
 			continuousVertical: false,
-			scrollingSpeed: 1700,
+			scrollingSpeed: 1200,
 			navigation: false,
 			slidesNavigation: true,
 			slidesNavPosition: 'bottom',
 			autoScrolling: false,
-			afterLoad: function(anchorLink, index){
-            console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
-        },
-        onLeave: function(index, nextIndex, direction){
-            console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
+			licenseKey: 'CURBe7Q$x7',
+			afterLoad: function(anchorLink, index) {
+				console.log("AFTER LOAD - anchorLink:" + anchorLink + " index:" + index);
+			},
+			onLeave: function(index, nextIndex, direction) {
+				console.log("ONLEAVE - index:" + index + " nextIndex:" + nextIndex + " direction:" + direction);
 
-        },
-    });
-</script>
+			},
+		});
+	</script>
 
 </body>
+
 </html>
