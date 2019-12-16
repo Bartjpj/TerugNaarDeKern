@@ -13,11 +13,9 @@ function loopskipbtn() {
 setTimeout("revealspeechbubbleafter()", 3000);
 setTimeout("loopskipbtn()", 4500);
 
-var myItems;
-    $.getJSON('namen.json', function(data) {
-        myItems = data.items;
-        console.log(myItems);
-    });
+$.getJSON("js/namen.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+});
 
 $('.flex-item').click(function(){
   $('.overlay-dark').css('display', 'block');
