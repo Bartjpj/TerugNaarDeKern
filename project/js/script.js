@@ -26,7 +26,6 @@ $.getJSON("js/namen.json", function(json) {
     var item = json[key];
     for (var key2 in item) {
       var splitchars = item[key2].split(";");
-      naamannen = String(splitchars[3]);
     }
 
     if (splitchars[3] == naam){
