@@ -10,7 +10,7 @@
 	<meta name="Resource-type" content="Document" />
 
 
-	<link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
 	<link rel="stylesheet" type="text/css" href="css/transitions.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -50,16 +50,30 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col col-12">
+					<!-- <div class="col col-12">
 						<h1 class="text-focus-in">De wereld van genetica</h1>
+					</div> -->
+
+					<div class="col col-2">
+						<img id="speechbubble" src="imgs/speechbubble.svg" alt="speechbubble" />
 					</div>
 
-					<div class="col col-12">
-						<img id="earth" src="imgs/earth.svg" alt="earth" />
+					<div class="col col-6">
+						<div class="earthimg">
+							<img id="earth" src="imgs/earth.svg" alt="earth" />
+						</div>
 					</div>
 
 					<div class="col col-4">
-						<img id="speechbubble" src="imgs/speechbubble.svg" alt="speechbubble" />
+						<a href="#" id="linktext" onclick="toggle_visibility('foo');">Klik hier voor meer info</a>
+						<div id="foo" class="infoblock">
+							<h1>Welkom!</h1>
+							<p>
+								Allereerst even terug naar de kern. Wat is DNA? en wat kun je met DNA?
+								Dit en nog andere vragen die voorbijkomen in dit verhaal over jou.
+								Het doel is vooral om de basisgenetica over te brengen.
+							</p>
+						</div>
 					</div>
 
 					<div class="col col-12">
@@ -108,7 +122,7 @@
 	</div>
 
 
-	<script type="text/javascript" src="../dist/fullpage.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
 	<script type="text/javascript" src="js/examples.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>

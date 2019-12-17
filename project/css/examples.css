@@ -115,7 +115,7 @@ body.fp-viewing-firstPage #menu{
 
 img#earth{
   height: auto;
-  width: 50%;
+  /* width: 50%; */
   margin: 40px;
 }
 
@@ -125,10 +125,31 @@ img#earth{
 
 img#speechbubble{
   height: auto;
-  width: 40%;
+  width: 100%;
   visibility: hidden;
-  margin-top: -400px;
+  /* margin-top: -400px; */
   margin-left: 100px;
+}
+
+div.infoblock {
+  background-color: red;
+  margin-top: 80px;
+  display: none;
+}
+
+div.infoblock p{
+  font-size: 1em;
+  padding: 20px;
+  text-align: justify;
+  text-shadow: none;
+}
+
+div.infoblock h1{
+  text-shadow: none;
+}
+
+a#linktext{
+  opacity: 0;
 }
 
 #menu li.active{

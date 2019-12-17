@@ -10,12 +10,32 @@ function loopskipbtn() {
     opacity: '1'
   }, 3000);
   skipbtn.animate({
-    opacity: '0'
+    opacity: '0.20'
   }, 1000, loopskipbtn);
 }
 
 setTimeout("revealspeechbubbleafter()", 3000);
 setTimeout("loopskipbtn()", 4500);
+
+function revealtextlink() {
+  var linktext = $('#linktext');
+  linktext.animate({
+    opacity: '1'
+  }, 3000);
+
+}
+
+revealtextlink();
+
+function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+
+       else
+          e.style.display = 'block';
+          $(e).addClass("text-pop-up-bottom");
+    }
 
 $.getJSON("js/namen.json", function(json) {
   // console.log(json); // this will show the info it in firebug console
