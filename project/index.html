@@ -41,6 +41,9 @@
 
 		<li class="navnumber">4</li>
 		<li data-menuanchor="5thPage" class="active"><a href="#5thPage"></a></li>
+
+		<li class="navnumber">5</li>
+		<li data-menuanchor="lastPage" class="active"><a href="#lastPage"></a></li>
 	</ul>
 
 
@@ -89,33 +92,82 @@
 
 		</div>
 		<div class="section" id="section1">
-			<div class="intro">
-				<h1>1 Intro</h1>
-				<p>Er zijn hier 7,5 miljard mensen en iedereen is uniek, jij dus ook.</p>
+			<div class="container">
+					<div class="row">
+						<div class="col col-12">
+							<div class="intro">
+								<h1>1 Intro</h1>
+								<p>Er zijn hier 7,5 miljard mensen en iedereen is uniek, jij dus ook.</p>
+							</div>
+						</div>
+					</div>
 			</div>
 		</div>
+
+		<div class="section" id="section1">
+			<div class="container">
+				<div class="row">
+					<div class="col col-5">
+							<img id="blueprint" src="imgs/blueprint.svg" alt="blueprint" />
+					</div>
+
+					<div class="col col-7">
+						<h1>2 DNA</h1>
+						<div class="intro text-justify">
+								<p>In je lichaam zitten +- 40 miljard cellen. Elk van deze cellen heeft hetzelfde DNA.
+								Dit DNA bevindt zich in de celkern. DNA is weldegelijk de blauwdruk van je lichaam. Hierin staat alle informatie over jezelf.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="section" id="section2">
-			<div class="intro">
-				<h1>Scroll Down</h1>
-				<p>And it will animate down to the first section</p>
+			<div class="container">
+					<div class="row">
+						<div class="col col-7">
+							<h1>3 Van DNA naar Eiwit</h1>
+							<div class="intro text-justify">
+									<p>Al die eiwitten worden in de cellen gemaakt. Eerst wordt in de celkern een kopie gemaakt van een deel van het DNA dat codeert voor een eiwit. Die kopie wordt gemaakt door een speciaal eiwit, RNA-polymerase. De kopie wordt gemaakt van losse organische basen die in de kern voorradig zijn.
+								</p>
+							</div>
+						</div>
+
+						<div class="col col-5">
+							<!-- <div class="earthimg"> -->
+								<img id="cell" src="imgs/2cell.svg" alt="cell" />
+							<!-- </div> -->
+						</div>
+					</div>
 			</div>
 		</div>
+
 		<div class="section" id="section3">
-			<div class="intro">
-				<h1>Scroll Down</h1>
-				<p>And it will animate down to the first section</p>
+			<div class="container">
+					<div class="row">
+						<div class="col col-12">
+							<h1>4 Replicatie</h1>
+							<div class="intro text-justify">
+									<p>Om te zorgen dat DNA gedeeld kan worden, wordt er iets gemaakt dat RNA heet. RNA is één helft van de DNA streng.
+								</p>
+							</div>
+						</div>
+					</div>
 			</div>
 		</div>
+
 		<div class="section" id="section4">
-			<div class="intro">
-				<h1>Scroll Down</h1>
-				<p>And it will animate down to the first section</p>
-			</div>
-		</div>
-		<div class="section" id="section5">
-			<div class="intro">
-				<h1>Scroll Down</h1>
-				<p>And it will animate down to the first section</p>
+			<div class="container">
+					<div class="row">
+						<div class="col col-12">
+							<h1>5 Overerving</h1>
+							<div class="intro text-justify">
+									<p>Als kind krijg je 23 chromosomen van je vader en 23 van je moeder. Hieruit wordt je eigen DNA opgemaakt.
+								</p>
+							</div>
+						</div>
+					</div>
 			</div>
 		</div>
 	</div>
@@ -132,7 +184,7 @@
 
 	<script type="text/javascript">
 		var myFullpage = new fullpage('#fullpage', {
-			sectionsColor: ['#000B22', '#000B22', '#7BAABE', 'whitesmoke', '#ccddff'],
+			sectionsColor: ['#000B22', '#000B22', '#000B22', '#7BAABE', '#000B22', '#000B22'],
 			anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', 'lastPage'],
 			menu: '#menu',
 			continuousVertical: false,
