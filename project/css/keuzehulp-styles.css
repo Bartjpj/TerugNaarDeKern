@@ -1,8 +1,12 @@
 
+body {
+  background-color: whitesmoke;
+}
 .containerContainer{
   height: 80vh;
   width: auto;
-  margin: 0 5% 5% 5%;
+  margin: 5% 5% 5% 5%;
+  margin-top: -270px;
 }
 
 .flex-container {
@@ -17,8 +21,6 @@
     display: flex;
     -webkit-flex-flow: row;
     justify-content: space-around;
-
-
     line-height:30px;
 }
 .flex-item {
@@ -31,6 +33,36 @@
     background-color: grey;
     cursor: pointer;
     bottom: 0;
+}
+.keuzehulp-titel{
+  color: blue;
+}
+.afstand-link{
+  margin-top: 40px;
+  color: whitesmoke;
+}
+.afstand-link2{
+  margin-bottom: 40px;
+  color: whitesmoke;
+}
+.link-home {
+  text-align: left;
+  margin-left: 20px;
+ color: brown;
+}
+.link-res {
+  text-align: right;
+  margin-right: 20px;
+ color: brown;
+}
+.keuze-aarde {
+  margin-top: -550px;
+  margin-left: -450px;
+  color: rgba(255, 255, 255, 0.5);
+}
+#aarde{
+  margin-left: -90px;
+  width: 70%;
 }
 .vraag-tag{
   /* deze moet beneden komen maar het lukt niet :( */
@@ -51,7 +83,7 @@ h1{
   position: absolute;
   bottom: 0;
   right: 20%;
-  background-color: red;
+  background-color: #ff5252;
   cursor: pointer;
 
   display: none;
@@ -66,13 +98,17 @@ h1{
 .vraag-tekst, .weetje-tekst{
   margin: 10%;
 }
+.vraag-tekst {
+  font-size: 30px;
+  z-index: 9;
+}
 
 .popup-weetje{
   width: 30%; height: 60%;
   position: absolute;
   bottom: 0;
   right: 40%;
-  background-color: purple;
+  background-color: #4943d3;
 
   cursor: pointer;
 
