@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61" height="190" viewBox="0 0 61 190">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #9a9a9a;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="ch9-2" class="cls-1">
+    <rect class="cls-2" width="61" height="190" rx="30.5"/>
+    <rect class="cls-3" x="1" y="1" width="59" height="188" rx="29.5"/>
+  </g>
+</svg>

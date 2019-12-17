@@ -1,7 +1,15 @@
-
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7vh;
+  letter-spacing: 5px;
+  text-align: center;
+}
+html{
+  background-color: white;
+}
 .containerContainer{
   height: 80vh;
-  width: auto;
+  width: 80vw;
   margin: 0 5% 5% 5%;
 }
 
@@ -22,18 +30,36 @@
     line-height:30px;
 }
 .flex-item {
-    border: grey 2px solid;
     margin: 10px;
-    color: white;
+    color: black;
     font-size: 1.5em;
     flex: 1 0 auto;
+    width: auto;
     height: auto;
-    background-color: grey;
     cursor: pointer;
     bottom: 0;
 }
-.vraag-tag{
+.chromosoom{
+  height: 20vh;
+}
+.chromosoom2{
+  height: 18vh;
+}
+.chromosoom3{
+  height: 16vh;
+}
+.chromosoomy{
+  height: 5vh;
+}
+.vraag-tag, .vraag-tagxy{
   /* deze moet beneden komen maar het lukt niet :( */
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #4E4B4B;
+}
+.vraag-tagxy{
+  text-align: left;
 }
 .flex-item:before {
     content:'';
