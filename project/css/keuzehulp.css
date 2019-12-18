@@ -1,7 +1,11 @@
+/* Keuzehulp CSS
+ * --------------------------------------- */
 
 body {
   background-color: whitesmoke;
+  color: black;
 }
+
 .containerContainer{
   height: 80vh;
   width: auto;
@@ -146,5 +150,10 @@ h1{
   /* voor custom: cursor:url('...')  */
 }
 
-@media only screen and (max-width: 768px) {
+#body_keuzehulp {
+  background-color: green;
+  width: auto;
+  height: max-content;
+}
 
+@media only screen and (max-width: 768px) {
