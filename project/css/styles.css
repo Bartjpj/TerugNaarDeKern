@@ -6,11 +6,29 @@ body {
   min-height: 100%;
   font-family: 'Montserrat', sans-serif;
 }
+.container {
+  margin-right: 0px;
+}
 #body_keuzehulp {
   background-color: green;
   width: auto;
   height: max-content;
 }
+#skipstorybtn {
+  font-size: 30px;;
+}
+
+#begininfoblock {
+  font-size: 11px;
+  background-color: #03205f;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+
+
+/* DEMO-SPECIFIC STYLES */
+
 
 /* HOOFDSTUK 1 --------------------------------------*/
 #body_index{

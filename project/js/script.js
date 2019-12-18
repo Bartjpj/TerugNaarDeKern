@@ -88,3 +88,24 @@ $('.popup-weetje').click(function() {
   $('.popup-vraag').css('z-index', '100');
   $('.popup-weetje').css('z-index', '101');
 });
+
+// typing effect
+var i = 0;
+var txt = 
+'Welkom!  '+
+'Op deze website nemen we je mee op reis in de wereld van genetica. ' +
+'Allereerst even terug naar de kern. Wat is DNA? en wat kun je met DNA? ' +
+'Dit en nog andere vragen die voorbijkomen in dit verhaal over jou. ' + 
+'De informatie op de website is met zorg geschreven voor meer informatie zie de bronnen. '
+
+var speed = 80;
+
+document.getElementById('start-welkomtekst').onclick = typeWriter(); 
+
+  function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typedemo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}

@@ -12,6 +12,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="css/transitions.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -46,9 +47,12 @@
 		<li data-menuanchor="lastPage" class="active"><a href="#lastPage"></a></li>
 	</ul>
 
+	
+
 
 	<div id="fullpage">
 		<div class="section" id="section0">
+
 
 			<div class="container">
 				<div class="row">
@@ -66,22 +70,18 @@
 							<img id="earth" src="imgs/earth.svg" alt="earth" />
 						</div>
 					</div>
+					
 
-					<div class="col col-4">
-						<a href="#" id="linktext" onclick="toggle_visibility('foo');">Klik hier voor meer info</a>
-						<div id="foo" class="infoblock">
-							<h1>Welkom!</h1>
-							<p>
-								Allereerst even terug naar de kern. Wat is DNA? en wat kun je met DNA?
-								Dit en nog andere vragen die voorbijkomen in dit verhaal over jou.
-								Het doel is vooral om de basisgenetica over te brengen.
-							</p>
-						</div>
+					<div id="begininfoblock" class="col col-4">
+								<p id="start-welkomtekst" onclick="typeWriter()"></p>
+								<p id="typedemo"></p>	
 					</div>
 
 					<div class="col col-12">
 						<div class="float-right">
-							<a id="skipstorybtn" class="text-secondary" href="keuzepagina.html"> <u>Skip het verhaal</u> </a>
+							<a id="skipstorybtn" class="text-secondary" href="keuzepagina.html"> <u>
+								Meteen door naar
+								DNA-Keuzehulp</u> </a>
 						</div>
     			</div>
 
