@@ -149,6 +149,10 @@ body.fp-viewing-firstPage #menu{
 
 /* Images
  * --------------------------------------- */
+img{
+  width: 100%;
+}
+
 #section0{
     background-image: url('../imgs/elipses.svg');
     height: auto;
