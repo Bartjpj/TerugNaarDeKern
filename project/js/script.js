@@ -68,17 +68,18 @@ $.getJSON("js/namen.json", function(json) {
   console.log(groet);
 });
 
+//resulaten
+var huisarts = 0;
+var commericeel = 0;
+var geentest = 0;
+
 // show vraag 
-// $('.flex-item').click(function() {
-//   $('.overlay-dark').css('display', 'block');
-//   $('.popup-vraag').css('display', 'block');
-//   $('.popup-weetje').css('display', 'block');
-// });
 $('#item-1').click(function() {
   $('.overlay-dark').css('display', 'block');
   $('#vraag-1').css('display', 'block');
   $('#weetje-1').css('display', 'block');
 });
+
 $('#item-2').click(function() {
   $('.overlay-dark').css('display', 'block');
   $('#vraag-2').css('display', 'block');

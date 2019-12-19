@@ -52,18 +52,18 @@ body {
 .keuzehulp-titel{
   color: blue;
 }
-
+.link1{
+  margin-top: -500px;
+  margin-left: -400px;
+  color: rgba(255, 255, 255, 0.5);
+}
 .link-home {
-  float: right;
-  margin-top: 380px;
-  margin-right: 0px;
- color: brown;
+  margin-left: -90px;
+  width: 70%;
 }
 .link-res {
   float: right;
-  margin-top: 400px;
-  margin-right: 0px;
- color: brown;
+
 }
 .keuze-aarde {
   margin-top: -550px;
@@ -88,6 +88,28 @@ body {
     float:left;
     padding-top:100%;
 }
+
+.btn-strongly-agree {
+  margin: 0 0px 0 0px;
+  padding: 30px 60px 30px 60px;
+  font-size: medium;
+}
+
+.btn-strongly-agree {
+	/* color: #89d298; */
+	font-weight: bold;
+}
+
+.btn-strongly-agree.active,
+.btn-strongly-agree:active,
+.btn-strongly-agree:focus,
+.btn-strongly-agree:active:focus,
+.btn-strongly-agree.active:focus,
+.btn-strongly-agree:hover
+ {
+	background-color: #3819e9;
+}
+
 h1{
   /* margin: 0; */
   font-size: 3vh;
