@@ -68,12 +68,130 @@ $.getJSON("js/namen.json", function(json) {
   console.log(groet);
 });
 
-$('.flex-item').click(function() {
+// show vraag 
+// $('.flex-item').click(function() {
+//   $('.overlay-dark').css('display', 'block');
+//   $('.popup-vraag').css('display', 'block');
+//   $('.popup-weetje').css('display', 'block');
+// });
+$('#item-1').click(function() {
   $('.overlay-dark').css('display', 'block');
-  $('.popup-vraag').css('display', 'block');
-  $('.popup-weetje').css('display', 'block');
+  $('#vraag-1').css('display', 'block');
+  $('#weetje-1').css('display', 'block');
+});
+$('#item-2').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-2').css('display', 'block');
+  $('#weetje-2').css('display', 'block');
+});
+$('#item-3').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-3').css('display', 'block');
+  $('#weetje-3').css('display', 'block');
+});
+$('#item-4').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-4').css('display', 'block');
+  $('#weetje-4').css('display', 'block');
+});
+$('#item-5').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-5').css('display', 'block');
+  $('#weetje-5').css('display', 'block');
+});
+$('#item-6').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-6').css('display', 'block');
+  $('#weetje-6').css('display', 'block');
+});
+$('#item-7').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-7').css('display', 'block');
+  $('#weetje-7').css('display', 'block');
+});
+$('#item-8').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-8').css('display', 'block');
+  $('#weetje-8').css('display', 'block');
+});
+$('#item-9').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-1').css('display', 'block');
+  $('#weetje-1').css('display', 'block');
+});
+$('#item-10').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-2').css('display', 'block');
+  $('#weetje-2').css('display', 'block');
+});
+$('#item-11').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-11').css('display', 'block');
+  $('#weetje-11').css('display', 'block');
+});
+$('#item-12').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-12').css('display', 'block');
+  $('#weetje-12').css('display', 'block');
+});
+$('#item-13').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-13').css('display', 'block');
+  $('#weetje-13').css('display', 'block');
+});
+$('#item-14').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-14').css('display', 'block');
+  $('#weetje-14').css('display', 'block');
+});
+$('#item-15').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-15').css('display', 'block');
+  $('#weetje-15').css('display', 'block');
+});
+$('#item-16').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-16').css('display', 'block');
+  $('#weetje-16').css('display', 'block');
+});
+$('#item-17').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-17').css('display', 'block');
+  $('#weetje-17').css('display', 'block');
+});
+$('#item-18').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-18').css('display', 'block');
+  $('#weetje-18').css('display', 'block');
+});
+$('#item-19').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-19').css('display', 'block');
+  $('#weetje-19').css('display', 'block');
+});
+$('#item-20').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-20').css('display', 'block');
+  $('#weetje-20').css('display', 'block');
+});
+$('#item-21').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-21').css('display', 'block');
+  $('#weetje-21').css('display', 'block');
+});
+$('#item-22').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-22').css('display', 'block');
+  $('#weetje-22').css('display', 'block');
+});
+$('#item-23').click(function() {
+  $('.overlay-dark').css('display', 'block');
+  $('#vraag-23').css('display', 'block');
+  $('#weetje-23').css('display', 'block');
 });
 
+
+// overlay vraag + wegklikken
 $('.overlay-dark').click(function() {
   $('.popup-vraag').css('display', 'none');
   $('.overlay-dark').css('display', 'none');
