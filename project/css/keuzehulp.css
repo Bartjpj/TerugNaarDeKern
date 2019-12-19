@@ -52,22 +52,17 @@ body {
 .keuzehulp-titel{
   color: blue;
 }
-.afstand-link{
-  margin-top: 40px;
-  color: whitesmoke;
-}
-.afstand-link2{
-  margin-bottom: 40px;
-  color: whitesmoke;
-}
+
 .link-home {
-  text-align: left;
-  margin-left: 20px;
+  float: right;
+  margin-top: 380px;
+  margin-right: 0px;
  color: brown;
 }
 .link-res {
-  text-align: right;
-  margin-right: 20px;
+  float: right;
+  margin-top: 400px;
+  margin-right: 0px;
  color: brown;
 }
 .keuze-aarde {
