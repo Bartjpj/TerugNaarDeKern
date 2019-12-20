@@ -162,7 +162,7 @@ body.fp-viewing-firstPage #menu{
 
 #menu li a,
 #menu li.active a{
-	padding: 3px 18px;
+	padding: 2px 10px;
 	display:block;
   margin-right: 10px;
   color: white;
