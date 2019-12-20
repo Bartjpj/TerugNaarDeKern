@@ -6,9 +6,14 @@ var btns1 = header1.getElementsByClassName("btnv1");
 for (var i = 0; i < btns1.length; i++) {
   btns1[i].addEventListener("click", function() {
   var current1 = header1.getElementsByClassName("active");
+  
   console.log('current 1 ' + current1);
   if (current1.length > 0) {
     current1[0].className = current1[0].className.replace(" active", "");
+     
+    var elem = document.getElementById('ext-gen26');
+    var txt = elem.textContent || elem.innerText;
+    console.log('info 1: ' + this.className );
   }
   this.className += " active";
 
