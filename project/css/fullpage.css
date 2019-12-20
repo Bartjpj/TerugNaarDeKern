@@ -132,6 +132,7 @@ html.fp-enabled,
 .fp-slidesNav ul {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 #fp-nav ul li,
 .fp-slidesNav ul li {
@@ -143,6 +144,7 @@ html.fp-enabled,
 }
 .fp-slidesNav ul li {
     display: inline-block;
+
 }
 #fp-nav ul li a,
 .fp-slidesNav ul li a {
@@ -171,7 +173,7 @@ html.fp-enabled,
     height: 4px;
     width: 4px;
     border: 0;
-    background: #333;
+    background: white;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
