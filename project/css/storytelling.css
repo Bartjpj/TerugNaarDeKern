@@ -111,6 +111,12 @@ p{
   clear: both;
 }
 
+.footer{
+  text-align: center;
+  /* width: 700px; */
+  width: 65%;
+  margin: 0 auto;
+}
 .section{
 	/* text-align:center; */
 }
