@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/transitions.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -49,189 +49,116 @@
 
 	<div id="fullpage">
 		<div class="section" id="section0">
+					<img id="speechbubble" src="imgs/speechbubble.svg" alt="speechbubble" />
 
-			<div class="container">
-				<div class="row">
+					<img id="earth" src="imgs/earth.svg" alt="earth" />
 
-					<!-- <div class="col col-12">
-						<h1 class="text-focus-in">De wereld van genetica</h1>
-					</div> -->
-
-					<div class="col col-2">
-						<img id="speechbubble" src="imgs/speechbubble.svg" alt="speechbubble" />
+					<div id="begininfoblock">
+						<p id="start-welkomtekst" onclick="typeWriter()"></p>
+						<p id="typedemo"></p>
 					</div>
 
-					<div class="col col-6">
-						<div class="earthimg">
-							<img id="earth" src="imgs/earth.svg" alt="earth" />
-						</div>
-					</div>
-
-
-					<div id="begininfoblock" class="col col-4">
-								<p id="start-welkomtekst" onclick="typeWriter()"></p>
-								<p id="typedemo"></p>
-					</div>
-
-					<div class="col col-12">
-						<div class="float-right">
-							<a id="skipstorybtn" class="text-secondary" href="keuzepagina.html"> <u>
-								Meteen door naar
-								DNA-Keuzehulp</u> </a>
-						</div>
+				<div id="scrollbtn" class="demo">
+					<a href="#secondPage"><span></span>Scroll</a>
 				</div>
 
-				<section id="section05" class="demo">
-						<a href="#secondPage"><span></span>Scroll</a>
-					  </section>
-
-				</div>
-			</div>
+				<a id="skipstorybtn" class="text-secondary" href="keuzepagina.html"> <u>
+						Meteen door naar
+						DNA-Keuzehulp</u> </a>
 		</div>
 
 		<div class="section" id="section1">
-			<div class="container">
-					<div class="row">
-						<div class="col col-12">
-							<div class="intro">
-								<h1>1 Intro</h1>
-								<p>Er zijn hier 7,5 miljard mensen en iedereen is uniek, jij dus ook.</p>
-							</div>
-						</div>
-					</div>
+			<div class="intro">
+				<h1>1 Intro</h1>
+				<p>Er zijn hier 7,5 miljard mensen en iedereen is uniek, jij dus ook.</p>
 			</div>
 		</div>
-
-		<div class="section" id="section1">
-			<div class="container">
-				<div class="row">
-					<div class="col col-5">
-							<img id="blueprint" src="imgs/blueprint.svg" alt="blueprint" />
-					</div>
-
-					<div class="col col-7">
-						<h1>2 DNA</h1>
-						<div class="intro text-justify">
-								<p>In je lichaam zitten +- 40 miljard cellen. Elk van deze cellen heeft hetzelfde DNA.
-								Dit DNA bevindt zich in de celkern. DNA is weldegelijk de blauwdruk van je lichaam. Hierin staat alle informatie over jezelf.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col col-5">
-							<img id="blueprint" src="imgs/dna.svg" alt="dna" />
-					</div>
-
-					<div class="col col-7">
-						<h1>Hoe ziet het eruit?</h1>
-						<div class="intro text-justify">
-								<p>DNA bestaat uit 2 strengen die opgebouwd zijn uit nucleotiden. Deze strengen worden samengehouden door de basenparen.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- <div class="section" id="section1"> -->
-
-		<!-- </div> -->
 
 		<div class="section" id="section2">
-			<div class="container">
-					<div class="row">
-						<div class="col col-7">
-							<h1>3 Van DNA naar Eiwit</h1>
-							<div class="intro text-justify">
-									<p>Al die eiwitten worden in de cellen gemaakt. Eerst wordt in de celkern een kopie gemaakt van een deel van het DNA dat codeert voor een eiwit. Die kopie wordt gemaakt door een speciaal eiwit, RNA-polymerase. De kopie wordt gemaakt van losse organische basen die in de kern voorradig zijn.
-								</p>
-							</div>
-						</div>
+			<div class="slide" id="slide1" data-anchor="slide1">
 
-						<div class="col col-5">
-							<!-- <div class="earthimg"> -->
-								<img id="cell" src="imgs/2cell.svg" alt="cell" />
-							<!-- </div> -->
-						</div>
+					<div class="intro">
+						<h1>2 DNA</h1>
+						<p>In je lichaam zitten +- 40 miljard cellen. Elk van deze cellen heeft hetzelfde DNA.
+							Dit DNA bevindt zich in de celkern. DNA is weldegelijk de blauwdruk van je lichaam. Hierin staat alle informatie over jezelf.
+						</p>
 					</div>
+
+					<div class="imgcontainer">
+						<img id="blueprint" src="imgs/blueprint.svg" alt="blueprint" />
+					</div>
+
+			</div>
+
+			<div class="slide" id="slide2" data-anchor="slide2">
+				<div class="intro">
+					<h1>Hoe ziet het eruit?</h1>
+					<p>DNA bestaat uit 2 strengen die opgebouwd zijn uit nucleotiden. Deze strengen worden samengehouden door de basenparen.
+					</p>
+					<div class="imgcontainer">
+						<img id="blueprint" src="imgs/dna.svg" alt="dna" />
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div class="section" id="section3">
-			<div class="container">
-					<div class="row">
-						<div class="col col-12">
-							<h1>4 Replicatie</h1>
-							<div class="intro text-justify">
-									<p>Om te zorgen dat DNA gedeeld kan worden, wordt er iets gemaakt dat RNA heet. RNA is één helft van de DNA streng.
-								</p>
-							</div>
-						</div>
-					</div>
+			<div class="intro">
+				<h1>3 Van DNA naar Eiwit</h1>
+				<p>Al die eiwitten worden in de cellen gemaakt. Eerst wordt in de celkern een kopie gemaakt van een deel van het DNA dat codeert voor een eiwit. Die kopie wordt gemaakt door een speciaal eiwit, RNA-polymerase. De kopie wordt gemaakt van
+					losse organische basen die in de kern voorradig zijn.
+				</p>
+
+				<div class="imgcontainer">
+					<img id="cell" src="imgs/2cell.svg" alt="cell" />
+				</div>
 			</div>
 		</div>
 
 		<div class="section" id="section4">
-			<div class="container">
-					<div class="row">
-						<div class="col col-12">
-							<h1>7 DNA testen</h1>
-							<div class="intro text-justify">
-									<p>
-										Er is zo veel mogelijk in de toekomst door middel van genetica.
-										Er zullen nog veel meer interessante onderwerpen opduiken
-										en als mensheid weten we echt nog niet genoeg van onze genen af.
-								</p>
-							</div>
-						</div>
-					</div>
-			</div>
-			<div class="container">
-					<div class="row">
-						<div class="col col-10">
-							<div class="intro text-justify">
-									<p>
-										De mogelijkheid om je eigen genen-set te bekijken bestaat al,
-										maar er zijn hier nog een hoop haken en ogen aan.
-										Vaak wordt informatie suggestief neergezet,
-										hierdoor kan het erger lijken als dat het is.
-										Ook kan de achterhaalde informatie voor problemen zorgen waar
-										niet over nagedacht is.
-								</p>
-							</div>
-						</div>
-						<div class="col col-2">
-							<!-- img hier -->
-						</div>
-					</div>
-				</div>
-
-				<div class="container">
-						<div class="row">
-							<div class="col col-12">
-								<div class="intro text-justify">
-									<p>
-										Ondanks dit is het alsnog interessant om een DNA test te laten doen,
-										maar bedenk wel dat het grote impact kan hebben, of dit positief of negatief
-										is verschilt per persoon.
-										Daarom is het fijn om een aantal dingen op een rijtje te hebben.
-									</p>
-										<p>
-											Ben je geïnteresseerd? bekijk onze keuzehulp. Deze vragen helpen u een beter
-											beeld te krijgen over het eventuele resultaat van de DNA testen.
-									</p>
-								</div>
-								<a href="keuzepagina.html" class="redish-naarkeuzehulp">Naar de Keuzehulp</a>
-
-							</div>
-						</div>
-					</div>
+			<div class="intro">
+				<h1>4 Replicatie</h1>
+				<p>Om te zorgen dat DNA gedeeld kan worden, wordt er iets gemaakt dat RNA heet. RNA is één helft van de DNA streng.
+				</p>
 			</div>
 		</div>
+
+		<div class="section" id="section5">
+			<div class="intro">
+				<h1>7 DNA testen</h1>
+				<p>
+					Er is zo veel mogelijk in de toekomst door middel van genetica.
+					Er zullen nog veel meer interessante onderwerpen opduiken
+					en als mensheid weten we echt nog niet genoeg van onze genen af.
+				</p>
+			</div>
+
+			<div class="intro">
+				<p>
+					De mogelijkheid om je eigen genen-set te bekijken bestaat al,
+					maar er zijn hier nog een hoop haken en ogen aan.
+					Vaak wordt informatie suggestief neergezet,
+					hierdoor kan het erger lijken als dat het is.
+					Ook kan de achterhaalde informatie voor problemen zorgen waar
+					niet over nagedacht is.
+				</p>
+			</div>
+
+			<div class="intro">
+				<p>
+					Ondanks dit is het alsnog interessant om een DNA test te laten doen,
+					maar bedenk wel dat het grote impact kan hebben, of dit positief of negatief
+					is verschilt per persoon.
+					Daarom is het fijn om een aantal dingen op een rijtje te hebben.
+				</p>
+				<p>
+					Ben je geïnteresseerd? bekijk onze keuzehulp. Deze vragen helpen u een beter
+					beeld te krijgen over het eventuele resultaat van de DNA testen.
+				</p>
+			</div>
+			<a href="keuzepagina.html" class="redish-naarkeuzehulp">Naar de Keuzehulp</a>
+		</div>
+	</div>
 
 
 	<script type="text/javascript" src="js/fullpage.js"></script>
@@ -253,6 +180,7 @@
 			slidesNavigation: true,
 			slidesNavPosition: 'bottom',
 			autoScrolling: false,
+			scrollHorizontally: true,
 			licenseKey: 'CURBe7Q$x7',
 			afterLoad: function(anchorLink, index) {
 				console.log("AFTER LOAD - anchorLink:" + anchorLink + " index:" + index);

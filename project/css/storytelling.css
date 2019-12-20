@@ -30,12 +30,21 @@ section::after {
   opacity: .5;
 }
 
-#section05 a {
+#scrollbtn a {
   padding-top: 70px;
 }
-#section05 a span {
+
+div#scrollbtn.demo {
   position: absolute;
-  top: 0;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#scrollbtn a span {
+  position: absolute;
+  bottom: -15px;
   left: 50%;
   width: 24px;
   height: 24px;
@@ -78,13 +87,32 @@ p{
 	font-size: 2em;
   color: white;
 }
+
 .intro p{
-	width: 50%;
-	margin: 0 auto;
+	width: 600px;
+	/* margin: 30px auto; */
 	font-size: 1.5em;
 }
+
+.intro h1{
+	/* margin: auto auto 70px auto; */
+}
+
+.intro h1, .intro p{
+  margin-left: 110px;
+}
+
+.imgcontainer{
+  float: left;
+}
+
+.intro h1, .intro p{
+  float: left;
+  clear: both;
+}
+
 .section{
-	text-align:center;
+	/* text-align:center; */
 }
 
 /* Menu
@@ -125,6 +153,7 @@ body.fp-viewing-firstPage #menu{
 #menu li:hover{
 	background: rgba(255,255,255, 0.8);
 }
+
 #menu li a,
 #menu li.active a{
 	padding: 3px 18px;
@@ -149,9 +178,10 @@ body.fp-viewing-firstPage #menu{
 
 /* Images
  * --------------------------------------- */
-img{
-  width: 100%;
-}
+/* img{
+  width: 350px;
+  margin: 30px;
+} */
 
 #section0{
     background-image: url('../imgs/elipses.svg');
@@ -159,20 +189,23 @@ img{
     width: 100%;
 }
 
-.imgcontainer{
-  text-align: center;
+img#speechbubble, img#earth, #begininfoblock{
   float: left;
+}
+
+.imgcontainer, img#blueprint{
+  width: 400px;
+  margin-left: 70px;
 }
 
 img#earth{
   height: auto;
-  /* width: 50%; */
   margin: 40px;
 }
 
 img#speechbubble{
   height: auto;
-  width: 100%;
+  width: 200px;
   visibility: hidden;
   /* margin-top: -400px; */
   margin-left: 100px;
@@ -182,7 +215,11 @@ img#speechbubble{
  * --------------------------------------- */
 #skipstorybtn{
   opacity: 0;
-  font-size: 30px;
+  font-size: 20px;
+  width: 25%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 a#linktext{
@@ -237,18 +274,11 @@ div.infoblock h1{
 #begininfoblock {
   font-size: 11px;
   background-color: #03205f;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  /* margin-bottom: 0px; */
+  /* margin-left: 0px; */
+  width: 350px;
+  /* height: 200px; */
 }
 
 /* Bootstrap
  * --------------------------------------- */
-.row{
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-.container {
-  margin-right: 0px;
-  height: 580px;
-}
