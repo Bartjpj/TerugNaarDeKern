@@ -253,6 +253,9 @@ a#linktext{
 	top:1px;
 }
 
+.extra-info{
+  color: lightgrey;
+}
 
 /* Infoblocks
  * --------------------------------------- */
