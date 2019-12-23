@@ -4,6 +4,7 @@
 body {
   background-color: whitesmoke;
   color: black;
+  overflow: hidden;
 }
 
 .containerContainer{
