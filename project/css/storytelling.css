@@ -257,6 +257,21 @@ a#linktext{
   color: lightgrey;
 }
 
+#naam{
+  width: 650px;
+  margin-top: 60px;
+  margin-left: 110px;
+  height: 50px;
+  font-size: 3em;
+  text-transform: capitalize;
+  color: white;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid white 1px;
+}
+
 /* Infoblocks
  * --------------------------------------- */
 div.infoblock {

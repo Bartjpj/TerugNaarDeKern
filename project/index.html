@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/transitions.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+
 	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
 	<!--[if IE]>
@@ -85,11 +86,16 @@
 			<div class="slide" id="slide2" data-anchor="slide2">
 				<div class="intro">
 				<p>DNA bevat alle informatie over je lichaam, dit geldt niet alleen voor mensen maar ook voor dieren en planten.</p>
+				<p>Zeg... hoe heet je eigenlijk?</p>
+				<br>
+				<input type="text" id="naam">
+				<button type="button" id="btnNaam" class="redish-naarkeuzehulp" name="button">Verstuur jouw naam</button>
 			</div>
 			</div>
 			<div class="slide" id="slide3" data-anchor="slide3">
 				<div class="intro">
-					<p>Hey, leuk je te ontmoeten. Iedereen heeft uniek DNA,
+					<p id="naamgroet"></p>
+					<p>Iedereen heeft uniek DNA,
 						alleen eeneiige tweelingen hebben hetzelfde DNA, maar de rest van de mensen
 						heeft zijn eigen DNA structuur.
 		 				DNA is zelfs zo persoonlijk dat het gebruikt wordt om iemand te identificeren. </p>
@@ -399,7 +405,9 @@
 
 
 	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
 	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript" src="js/namenapi.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>

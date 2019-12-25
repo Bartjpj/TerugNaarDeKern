@@ -37,43 +37,12 @@ function toggle_visibility(id) {
           $(e).addClass("text-pop-up-bottom");
     }
 
-$.getJSON("js/namen.json", function(json) {
-  // console.log(json); // this will show the info it in firebug console
-  var naam = 'Cornelis';
-  var groet = "";
-
-  for (var key in json) {
-    var item = json[key];
-    for (var key2 in item) {
-      var splitchars = item[key2].split(";");
-    }
-
-    if (splitchars[3] == naam){
-      groet = "";
-      groet+= "Hoi " + naam + "! Volgens onze gegevens zijn er " + splitchars[4] + " mensen met jouw naam.";
-      break;
-    }
-    else if (splitchars[1] == naam){
-      groet = "";
-      groet+= "Hoi " + naam + "! Volgens onze gegevens zijn er " + splitchars[2] + " mensen met jouw naam.";
-      break;
-    }
-
-    else{
-      groet = "";
-      groet+='Hoi ' + naam + "!";
-    }
-
-  }
-  console.log(groet);
-});
-
 //resulaten
 var huisarts = 0;
 var commericeel = 0;
 var geentest = 0;
 
-// show vraag 
+// show vraag
 $('#item-1').click(function() {
   $('.overlay-dark').css('display', 'block');
   $('#vraag-1').css('display', 'block');
@@ -210,16 +179,16 @@ $('.popup-weetje').click(function() {
 
 // typing effect
 var i = 0;
-var txt = 
+var txt =
 'Welkom!  '+
 'Op deze website nemen we je mee op reis in de wereld van genetica. ' +
 'Allereerst even terug naar de kern. Wat is DNA? en wat kun je met DNA? ' +
-'Dit en nog andere vragen die voorbijkomen in dit verhaal over jou. ' + 
+'Dit en nog andere vragen die voorbijkomen in dit verhaal over jou. ' +
 'De informatie op de website is met zorg geschreven voor meer informatie zie de bronnen. '
 
 var speed = 80;
 
-document.getElementById('start-welkomtekst').onclick = typeWriter(); 
+document.getElementById('start-welkomtekst').onclick = typeWriter();
 
   function typeWriter() {
   if (i < txt.length) {
