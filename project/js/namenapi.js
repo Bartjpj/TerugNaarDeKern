@@ -6,7 +6,7 @@ $("#btnNaam").click(function(){
   $.getJSON("js/namen.json", function(json) {
     // console.log(json); // this will show the info it in firebug console
     // var naam = 'Cornelis';
-
+    // console.log(naam);
     for (var key in json) {
       var item = json[key];
       for (var key2 in item) {
@@ -16,22 +16,21 @@ $("#btnNaam").click(function(){
       if (splitchars[3] == naam){
         groet = "";
         groet+= "Hey " + naam + ", leuk je te ontmoeten. Volgens onze gegevens zijn er " + splitchars[4] + " mensen met jouw naam.";
+        document.getElementById('naamgroet').innerHTML = groet;
         break;
       }
       else if (splitchars[1] == naam){
         groet = "";
         groet+= "Hey " + naam + ", leuk je te ontmoeten. Volgens onze gegevens zijn er " + splitchars[2] + " mensen met jouw naam.";
+        document.getElementById('naamgroet').innerHTML = groet;
         break;
       }
 
       else{
         groet = "";
         groet+='Hey ' + naam + ", leuk je te ontmoeten.";
+        document.getElementById('naamgroet').innerHTML = groet;
       }
-
     }
   });
-
-  console.log(groet);
-  document.getElementById('naamgroet').innerHTML = groet;
 });

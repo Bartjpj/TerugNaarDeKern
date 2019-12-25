@@ -253,6 +253,25 @@ a#linktext{
 	top:1px;
 }
 
+#btnNaam{
+  width: 340px;
+	background-color:#0C40BB;
+	border-radius:30px;
+	display:inline-block;
+
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+  margin-top: 45px;
+  margin-left: 110px;
+}
+
+#btnNaam:hover{
+  background-color: #0A359D;
+}
+
 .extra-info{
   color: lightgrey;
 }
