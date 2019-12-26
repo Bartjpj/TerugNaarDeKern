@@ -33,7 +33,7 @@ $("#btnNaam").click(function(){
       }
       else if (splitchars[1] == naam){
         groet = "";
-        groet+= "Hey " + naam + ", leuk je te ontmoeten. Volgens onze" + gegevens.innerHTML + "zijn er " + splitchars[2] + " mensen met jouw naam.";
+        groet+= "Hey " + naam + ", leuk je te ontmoeten. Volgens onze " + gegevens.innerHTML + " zijn er " + splitchars[2] + " mensen met jouw naam.";
         document.getElementById('naamgroet').innerHTML = groet;
         break;
       }
