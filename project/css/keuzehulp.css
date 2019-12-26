@@ -119,7 +119,7 @@ h1{
 /* --------------------- POPUP VRAAG */
 .popup-vraag{
   width: 40%; height: 80%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 20%;
   background-color: #ff5252;
@@ -144,7 +144,7 @@ h1{
 
 .popup-weetje{
   width: 30%; height: 60%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 40%;
   background-color: #4943d3;
@@ -160,7 +160,7 @@ h1{
   opacity: 0.7;
   background-color: black;
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0; left: 0;
   z-index: 99;
 
@@ -183,24 +183,24 @@ h1{
 html{
   padding: 0;
   margin: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   overflow: hidden;
   display: inline-block;
 }
   .containerContainer{
-    height: 80vh;
-    width: auto;
+    height: 90%;
+    width: 90%;
     margin: 5% 5% 5% 5%;
     position: absolute;
     left: 0;
     top:0;
-    border: red 3px solid;
+    overflow: scroll;
   }
 
   .flex-container {
       padding: 0;
-      margin: 0;
+      margin: 1%;
       height: auto;
       list-style: none;
       display: -webkit-box;
@@ -211,16 +211,14 @@ html{
       -webkit-flex-flow: row;
       justify-content: space-around;
       line-height:30px;
+      flex-direction: row;
+      flex-wrap: wrap;
   }
   .flex-item {
-      margin: 10px;
+      margin: 5px;
       color: black;
-      font-size: 1.5em;
-      flex: 1 0 auto;
-      width: auto;
-      height: auto;
-      cursor: pointer;
-      bottom: 0;
+      font-size: 1em;
+      text-align: center;
   }
   .chromosoom{
     height: 20vh;
@@ -237,18 +235,21 @@ html{
   .keuzehulp-titel{
     color: blue;
   }
-  .link1{
-    margin-top: 0;
-    margin-left: 0;
-    color: rgba(255, 255, 255, 0.5);
-  }
   .link-home {
     margin-left: 0;
-    width: 70%;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    clear: both;
   }
   .link-res {
-    float: right;
-
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    z-index: 800;
+    margin: 5%;
   }
   .keuze-aarde {
     margin-top: 0;
