@@ -175,5 +175,155 @@ h1{
 }
 /* PHONE OPMAAK */
 @media only screen and (max-width: 768px) {
+  body {
+    background-color: whitesmoke;
+    color: black;
+    overflow: hidden;
+  }
+html{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: inline-block;
+}
+  .containerContainer{
+    height: 80vh;
+    width: auto;
+    margin: 5% 5% 5% 5%;
+    position: absolute;
+    left: 0;
+    top:0;
+    border: red 3px solid;
+  }
 
+  .flex-container {
+      padding: 0;
+      margin: 0;
+      height: auto;
+      list-style: none;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row;
+      justify-content: space-around;
+      line-height:30px;
+  }
+  .flex-item {
+      margin: 10px;
+      color: black;
+      font-size: 1.5em;
+      flex: 1 0 auto;
+      width: auto;
+      height: auto;
+      cursor: pointer;
+      bottom: 0;
+  }
+  .chromosoom{
+    height: 20vh;
+  }
+  .chromosoom2{
+    height: 18vh;
+  }
+  .chromosoom3{
+    height: 16vh;
+  }
+  .chromosoomy{
+    height: 5vh;
+  }
+  .keuzehulp-titel{
+    color: blue;
+  }
+  .link1{
+    margin-top: 0;
+    margin-left: 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .link-home {
+    margin-left: 0;
+    width: 70%;
+  }
+  .link-res {
+    float: right;
+
+  }
+  .keuze-aarde {
+    margin-top: 0;
+    margin-left: 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #aarde{
+    margin-left: 0;
+    width: 70%;
+  }
+  .vraag-tag, .vraag-tagxy{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #4E4B4B;
+  }
+  .vraag-tagxy{
+    text-align: left;
+  }
+  .flex-item:before {
+      content:'';
+      float:left;
+      padding-top:100%;
+  }
+
+  .btn-strongly-agree {
+    margin: 0 0px 0 0px;
+    padding: 30px 60px 30px 60px;
+    font-size: medium;
+  }
+
+
+  h1{
+    /* margin: 0; */
+    font-size: 3vh;
+  }
+
+  /* --------------------- POPUP VRAAG */
+  .popup-vraag{
+    width: 90%; height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ff5252;
+    cursor: pointer;
+
+    display: none;
+    z-index: 100;
+
+  }
+  .vraag-titel{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-left: 10%;
+  }
+  .vraag-tekst, .weetje-tekst{
+    margin: 10%;
+  }
+  .vraag-tekst {
+    font-size: 10px;
+    z-index: 9;
+  }
+
+  .popup-weetje{
+    width: 80%; height: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #4943d3;
+    font-size: 10px;
+
+    cursor: pointer;
+
+    display: none;
+    z-index: 101;
+    overflow: scroll;
+  }
 }
