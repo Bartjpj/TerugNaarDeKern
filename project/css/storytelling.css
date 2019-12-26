@@ -254,10 +254,10 @@ a#linktext{
 }
 
 #btnNaam{
-  width: 340px;
+  width: 450px;
 	background-color:#0C40BB;
 	border-radius:30px;
-	display:inline-block;
+	display: block;
 
 	cursor:pointer;
 	color:#ffffff;

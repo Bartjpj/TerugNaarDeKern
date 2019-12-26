@@ -38,6 +38,12 @@ $("#btnNaam").click(function(){
         break;
       }
 
+      else if(naam == ''){
+        groet = "";
+        document.getElementById('naamgroet').innerHTML = "";
+        break;
+      }
+
       else{
         groet = "";
         groet+='Hey ' + naam + ", leuk je te ontmoeten.";
