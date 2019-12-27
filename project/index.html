@@ -414,29 +414,38 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 
+	<script>
+	$('#fullpage').fullpage({
+		sectionsColor: ['#000B22', '#000B22', '#000B22', '#7BAABE', '#000B22', '#000B22', '#000B22', '#000B22', '#000B22'],
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', 'lastPage'],
+		menu: '#menu',
+		continuousVertical: false,
+		scrollingSpeed: 1200,
+		navigation: false,
+		slidesNavigation: true,
+		slidesNavPosition: 'bottom',
+		autoScrolling: false,
+		scrollHorizontally: true,
+		loopBottom: true,
+		licenseKey: 'CURBe7Q$x7',
+		afterLoad: function(anchorLink, index) {
+			console.log("AFTER LOAD - anchorLink:" + anchorLink + " index:" + index);
+		},
 
-	<script type="text/javascript">
-		var myFullpage = new fullpage('#fullpage', {
-			sectionsColor: ['#000B22', '#000B22', '#000B22', '#7BAABE', '#000B22', '#000B22', '#000B22', '#000B22', '#000B22'],
-			anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage', 'lastPage'],
-			menu: '#menu',
-			continuousVertical: false,
-			scrollingSpeed: 1200,
-			navigation: false,
-			slidesNavigation: true,
-			slidesNavPosition: 'bottom',
-			autoScrolling: false,
-			scrollHorizontally: true,
-			licenseKey: 'CURBe7Q$x7',
-			afterLoad: function(anchorLink, index) {
-				console.log("AFTER LOAD - anchorLink:" + anchorLink + " index:" + index);
-			},
-			onLeave: function(index, nextIndex, direction) {
-				console.log("ONLEAVE - index:" + index + " nextIndex:" + nextIndex + " direction:" + direction);
+		onLeave: function(index, nextIndex, direction) {
+			console.log("ONLEAVE - index:" + index + " nextIndex:" + nextIndex + " direction:" + direction);
 
-			},
-		});
+		},
+
+		afterRender: function () {
+							setInterval(function () {
+									$.fn.fullpage.moveSlideRight();
+							}, 10000);
+					}
+	});
+
 	</script>
+
 
 </body>
 
