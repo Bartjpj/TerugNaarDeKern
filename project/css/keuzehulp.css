@@ -119,7 +119,7 @@ h1{
 /* --------------------- POPUP VRAAG */
 .popup-vraag{
   width: 40%; height: 80%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 20%;
   background-color: #ff5252;
@@ -144,7 +144,7 @@ h1{
 
 .popup-weetje{
   width: 30%; height: 60%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 40%;
   background-color: #4943d3;
@@ -160,7 +160,7 @@ h1{
   opacity: 0.7;
   background-color: black;
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0; left: 0;
   z-index: 99;
 
@@ -175,5 +175,156 @@ h1{
 }
 /* PHONE OPMAAK */
 @media only screen and (max-width: 768px) {
+  body {
+    background-color: whitesmoke;
+    color: black;
+    overflow: hidden;
+  }
+html{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  display: inline-block;
+}
+  .containerContainer{
+    height: 90%;
+    width: 90%;
+    margin: 5% 5% 5% 5%;
+    position: absolute;
+    left: 0;
+    top:0;
+    overflow: scroll;
+  }
 
+  .flex-container {
+      padding: 0;
+      margin: 1%;
+      height: auto;
+      list-style: none;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row;
+      justify-content: space-around;
+      line-height:30px;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  .flex-item {
+      margin: 5px;
+      color: black;
+      font-size: 1em;
+      text-align: center;
+  }
+  .chromosoom{
+    height: 20vh;
+  }
+  .chromosoom2{
+    height: 18vh;
+  }
+  .chromosoom3{
+    height: 16vh;
+  }
+  .chromosoomy{
+    height: 5vh;
+  }
+  .keuzehulp-titel{
+    color: blue;
+  }
+  .link-home {
+    margin-left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    clear: both;
+  }
+  .link-res {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    z-index: 800;
+    margin: 5%;
+  }
+  .keuze-aarde {
+    margin-top: 0;
+    margin-left: 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #aarde{
+    margin-left: 0;
+    width: 70%;
+  }
+  .vraag-tag, .vraag-tagxy{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #4E4B4B;
+  }
+  .vraag-tagxy{
+    text-align: left;
+  }
+  .flex-item:before {
+      content:'';
+      float:left;
+      padding-top:100%;
+  }
+
+  .btn-strongly-agree {
+    margin: 0 0px 0 0px;
+    padding: 30px 60px 30px 60px;
+    font-size: medium;
+  }
+
+
+  h1{
+    /* margin: 0; */
+    font-size: 3vh;
+  }
+
+  /* --------------------- POPUP VRAAG */
+  .popup-vraag{
+    width: 90%; height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ff5252;
+    cursor: pointer;
+
+    display: none;
+    z-index: 100;
+
+  }
+  .vraag-titel{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-left: 10%;
+  }
+  .vraag-tekst, .weetje-tekst{
+    margin: 10%;
+  }
+  .vraag-tekst {
+    font-size: 10px;
+    z-index: 9;
+  }
+
+  .popup-weetje{
+    width: 80%; height: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #4943d3;
+    font-size: 10px;
+
+    cursor: pointer;
+
+    display: none;
+    z-index: 101;
+    overflow: scroll;
+  }
 }
