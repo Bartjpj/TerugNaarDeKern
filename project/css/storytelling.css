@@ -222,6 +222,7 @@ img#speechbubble{
   position: absolute;
   bottom: 20px;
   right: 20px;
+  color: white;
 }
 
 a#linktext{
@@ -254,7 +255,7 @@ a#linktext{
 }
 
 #btnNaam{
-  width: 450px;
+  width: 30%;
 	background-color:#0C40BB;
 	border-radius:30px;
 	display: block;
@@ -318,7 +319,7 @@ a#linktext{
 }
 
 #naam{
-  width: 650px;
+  width: 40%;
   margin-top: 60px;
   margin-left: 110px;
   height: 50px;
@@ -353,12 +354,134 @@ div.infoblock h1{
 
 #begininfoblock {
   font-size: 11px;
-  background-color: #03205f;
+  /* background-color: #03205f; */
+  background: rgba(3, 32, 95, 0.5);
   /* margin-bottom: 0px; */
   /* margin-left: 0px; */
   width: 350px;
   /* height: 200px; */
+  opacity: 0;
 }
 
-/* Bootstrap
- * --------------------------------------- */
+@media screen and (max-width: 414px) {
+
+  /* Sections and pages
+   * --------------------------------------- */
+
+  #fullpage{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  #menu{
+    width: 15%;
+  }
+  .section#section0 .fp-tableCell{
+    vertical-align: baseline;
+  }
+
+  .section{
+    height: auto !important;
+  }
+
+  .section .imgcontainer img{
+    width: 200px !important;
+    margin: 30px auto 50px auto !important;
+  }
+
+  .intro h1{
+    font-size: 2.0em;
+    width: 80%;
+    text-align: left;
+    margin: 40px auto auto 40px;
+  }
+
+  .intro p{
+    font-size: 1.5em;
+    width: 75%;
+    text-align: left;
+    margin: 40px auto auto 40px;
+  }
+
+  .footer p{
+    font-size: 1.5em;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Images
+   * --------------------------------------- */
+
+  span.imgspancontainer{
+    text-align: center;
+    display: block;
+  }
+
+  img#earth{
+    width: 60%;
+    float: none;
+  }
+
+  img#speechbubble{
+    margin: 0% 50% -50% 10%;
+    width: 30%;
+  }
+
+  /* Infoblocks
+   * --------------------------------------- */
+
+   .infoblockcontainer{
+     text-align: center;
+   }
+
+  #begininfoblock{
+    font-size: 0.7em;
+    width: 80%;
+    height: 35%;
+    float: none;
+    margin: auto;
+  }
+
+  p#typedemo{
+    font-size: 1.4em;
+    margin: 20px;
+    height: 70%;
+  }
+
+  p#start-welkomtekst, p#typedemo{
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext{
+    margin-left: -90%;
+    left: 50%;
+    width: 250%;
+    bottom: -550%;
+  }
+
+
+  /* Buttons
+   * --------------------------------------- */
+
+  #btnNaam{
+    width: 60%;
+    margin: 20px auto auto 40px;
+    padding: 8px 15px;
+  }
+
+  #naam{
+    margin: 40px auto auto 40px;
+    height: 40px;
+    width: 50%;
+    font-size: 2em;
+    outline: none;
+  }
+
+  .redish-naarkeuzehulp{
+    margin: 40px auto;
+    width: 75%;
+  }
+
+
+}

@@ -15,6 +15,10 @@ body{
   min-height: 100%;
 }
 
+#fullpage{
+  /* overflow-x: hidden; */
+}
+
 form,fieldset,input,textarea,p,blockquote,th,td {
     padding: 0;
     margin: 0;
