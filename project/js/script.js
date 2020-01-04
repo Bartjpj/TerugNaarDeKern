@@ -14,8 +14,10 @@ function loopskipbtn() {
   }, 1000, loopskipbtn);
 }
 
-setTimeout("revealspeechbubbleafter()", 3000);
+setTimeout("revealspeechbubbleafter()", 500);
 setTimeout("loopskipbtn()", 4500);
+
+
 
 function revealtextlink() {
   var linktext = $('#linktext');
@@ -188,7 +190,7 @@ var txt =
 
 var speed = 80;
 
-document.getElementById('start-welkomtekst').onclick = typeWriter();
+// document.getElementById('start-welkomtekst').onclick = typeWriter();
 
   function typeWriter() {
   if (i < txt.length) {
@@ -197,3 +199,13 @@ document.getElementById('start-welkomtekst').onclick = typeWriter();
     setTimeout(typeWriter, speed);
   }
 }
+
+function revealInfoblock() {
+  var infoblock = $('#begininfoblock');
+  infoblock.animate({
+    opacity: '1'
+  }, 500);
+}
+
+setTimeout("revealInfoblock()", 1000);
+setTimeout("typeWriter()", 1500);

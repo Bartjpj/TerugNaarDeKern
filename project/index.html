@@ -8,7 +8,7 @@
 	<meta name="description" content="fullPage continuous scrolling demo." />
 	<meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
 	<meta name="Resource-type" content="Document" />
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 
 	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="css/algemeen.css" />
@@ -60,13 +60,15 @@
 		<div class="section" id="section0">
 					<img id="speechbubble" src="imgs/speechbubble.svg" alt="speechbubble" />
 
+					<span class="imgspancontainer">
 					<img id="earth" src="imgs/earth.svg" alt="earth" />
+					</span>
 
 					<div id="begininfoblock">
-						<p id="start-welkomtekst" onclick="typeWriter()"></p>
+						<!-- <p id="start-welkomtekst" onclick="typeWriter()"></p> -->
 						<p id="typedemo"></p>
 					</div>
-
+					
 				<div id="scrollbtn" class="demo">
 					<a href="#secondPage"><span></span>Scroll</a>
 				</div>
@@ -94,7 +96,7 @@
 			</div>
 			<div class="slide" id="slide3" data-anchor="slide3">
 				<div class="intro">
-					<p id="naamgroet"><p id="gegevens"></p></p>
+					<p id="naamgroet"></p><p id="gegevens"></p>
 
 					<p>Iedereen heeft uniek DNA,
 						alleen eeneiige tweelingen hebben hetzelfde DNA, maar de rest van de mensen
@@ -403,7 +405,7 @@
 		<!-- <a href="keuzepagina.html" class="redish-naarkeuzehulp">Naar de Keuzehulp</a> -->
 
 	</div>
-
+</div>
 
 	<script type="text/javascript" src="js/fullpage.js"></script>
 	<script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
@@ -428,20 +430,23 @@
 		scrollHorizontally: true,
 		loopBottom: true,
 		licenseKey: 'CURBe7Q$x7',
+
+		responsiveWidth: 900,
+        afterResponsive: function(isResponsive){
+
+        },
 		afterLoad: function(anchorLink, index) {
 			console.log("AFTER LOAD - anchorLink:" + anchorLink + " index:" + index);
 		},
-
 		onLeave: function(index, nextIndex, direction) {
 			console.log("ONLEAVE - index:" + index + " nextIndex:" + nextIndex + " direction:" + direction);
 
 		},
-
-		afterRender: function () {
-							setInterval(function () {
-									$.fn.fullpage.moveSlideRight();
-							}, 10000);
-					}
+		// afterRender: function () {
+		// 					setInterval(function () {
+		// 							$.fn.fullpage.moveSlideRight();
+		// 					}, 10000);
+		// 			}
 	});
 
 	</script>
