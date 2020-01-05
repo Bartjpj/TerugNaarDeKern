@@ -203,6 +203,7 @@ img#speechbubble, img#earth, #begininfoblock{
 img#earth{
   height: auto;
   margin: 40px;
+  width: 50%;
 }
 
 img#speechbubble{
@@ -319,7 +320,7 @@ a#linktext{
 }
 
 #naam{
-  width: 40%;
+  width: 15%;
   margin-top: 60px;
   margin-left: 110px;
   height: 50px;
@@ -331,6 +332,7 @@ a#linktext{
   border-left: none;
   border-right: none;
   border-bottom: solid white 1px;
+  display: table-caption;
 }
 
 /* Infoblocks
@@ -363,7 +365,7 @@ div.infoblock h1{
   opacity: 0;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1480px) {
 
   /* Sections and pages
    * --------------------------------------- */
@@ -375,7 +377,7 @@ div.infoblock h1{
   }
 
   #menu{
-    width: 15%;
+    width: 10%;
   }
   .section#section0 .fp-tableCell{
     vertical-align: baseline;
@@ -419,13 +421,13 @@ div.infoblock h1{
   }
 
   img#earth{
-    width: 60%;
+    width: 40%;
     float: none;
   }
 
   img#speechbubble{
     margin: 0% 50% -50% 10%;
-    width: 30%;
+    width: 15%;
   }
 
   /* Infoblocks
@@ -437,14 +439,14 @@ div.infoblock h1{
 
   #begininfoblock{
     font-size: 0.7em;
-    width: 80%;
-    height: 35%;
+    width: 50%;
+    height: 30%;
     float: none;
     margin: auto;
   }
 
   p#typedemo{
-    font-size: 1.4em;
+    font-size: 1.8em;
     margin: 20px;
     height: 70%;
   }
@@ -483,5 +485,121 @@ div.infoblock h1{
     width: 75%;
   }
 
+}
 
+@media screen and (max-width: 1100px) {
+  #begininfoblock{
+    font-size: 0.7em;
+    width: 50%;
+    height: 40%;
+    float: none;
+    margin: auto;
+  }
+
+  p#typedemo{
+    font-size: 1.8em;
+    margin: 20px;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #begininfoblock{
+    font-size: 0.7em;
+    width: 50%;
+    height: 30%;
+    float: none;
+    margin: auto;
+  }
+
+  p#typedemo{
+    font-size: 1.4em;
+    margin: 20px;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  img#earth{
+    width: 60%;
+    float: none;
+  }
+
+  img#speechbubble{
+    margin: 0% 50% -50% 10%;
+    width: 30%;
+  }
+
+  #begininfoblock{
+    font-size: 0.7em;
+    width: 80%;
+    height: 35%;
+    float: none;
+    margin: auto;
+  }
+
+  p#typedemo{
+    font-size: 1.4em;
+    margin: 20px;
+    height: 70%;
+  }
+
+  p#start-welkomtekst, p#typedemo{
+    display: inline-block;
+  }
+
+  #menu{
+    width: 15%;
+  }
+}
+
+@media screen and (max-height: 640px) {
+  img#earth{
+    width: 30%;
+    float: none;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-height: 414px) {
+  img#earth{
+    width: 20%;
+    float: none;
+    margin: 10px;
+  }
+
+  #begininfoblock{
+    font-size: 0.7em;
+    width: 60%;
+    height: 35%;
+    float: none;
+    margin: auto;
+  }
+
+  p#typedemo{
+    font-size: 1.2em;
+    margin: 20px;
+    height: 70%;
+  }
+
+  #menu{
+    width: 10%;
+    padding-top: unset;
+  }
+
+  #scrollbtn a span{
+    width: 15px;
+    height: 15px;
+  }
+
+  .intro p{
+    font-size: 1.5em;
+    width: 75%;
+    text-align: left;
+    margin: 0 auto auto 40px;
+  }
+
+  #naam{
+    margin: 30px auto auto 40px;
+  }
 }
