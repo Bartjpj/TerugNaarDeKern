@@ -1,3 +1,272 @@
 body {
-    background-color: darkblue;
+    background-color: whitesmoke;
+    font: normal 400 20px/1 'Josefin Sans', sans-serif;
+    overflow: hidden;
+}
+.bottom-nav{
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+}
+.linkje{
+  padding: 10px;
+  clear: both;
+  position: relative;
+}
+.link-home{
+  border-radius: 50px;
+  color: black;
+  padding: 10px;
+  width: auto;
+  font-size: 23px;
+  line-height: normal;
+  transition: opacity 0.3s;
+  opacity: 0.5;
+  font-weight: bold;
+  text-decoration: underline;
+  width: 100%;
+}
+.link-home:hover{
+opacity: 1;
+}
+.backarrow{
+  width: 5%;
+  padding-right: 10px;
+  /* padding: 10px; */
+}
+.resultaat-title{
+  color: black;
+  text-align: center;
+  margin: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.info-links{
+  width: 45%;
+  height: 100%;
+  /* padding: 15px; */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.alg-title{
+  color: black;
+  text-align: center;
+  margin: 40px;
+  font-size: 70px;
+}
+.algemene-info{
+  font-size: 15px;
+  color: black;
+  margin: 30px 40px 0px 40px;
+  line-height: normal;
+  /* font-weight: bold; */
+}
+
+.info-rechts{
+  width: 55%;
+  height: 100%;
+  /* background-color: #4943d3; */
+  background-color: #03205F;
+  /* background-color: #002064; */
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.blok-info-rechts{
+  height: 90%;
+  margin: 50px 25px 0 25px;
+  color: whitesmoke;
+  line-height: normal;
+  /* font-weight: bold; */
+}
+
+.klinisch-title, .commercieel-title, .geentest-title{
+  /* background-color: #002064; */
+  /* background-color:  #4943d3; */
+  background-color: #09286A;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: bold;
+  color: white;
+  width: 27%;
+  float: left;
+  padding: 15px;
+  margin: 5px;
+
+  cursor: pointer;
+  transition: background-color 0.7s;
+}
+.klinisch-title{
+  background-color: #ee5052;
+}
+.klinisch-title:hover, .commercieel-title:hover, .geentest-title:hover{
+  background-color: #ee5052;
+}
+
+.title-sub{
+  font-size: 40px;
+}
+.informatieblok1{
+  width: auto;
+  padding: 1px 30px 10px 30px;
+  clear: both;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.informatieblok2{
+  width: auto;
+  padding: 1px 30px 10px 30px;
+  clear: both;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.informatieblok3{
+  width: auto;
+  padding: 1px 30px 10px 30px;
+  clear: both;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.informatieblok1, .informatieblok2, .informatieblok3{
+  font-size: 17px;
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    margin:0;
+    padding: 0;
+  }
+  .bottom-nav{
+    /* top: 0;
+    margin-top: 10px;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    position: fixed; */
+    position: relative;
+    clear: both;
+  }
+  .link-home{
+    font-size: 10px;
+  }
+  .info-links{
+    width: 100%;
+    height: 60%;
+    position: relative;
+  }
+  .alg-title{
+    font-size: 150%;
+  }
+  .info-rechts{
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: none;
+    bottom: 0;
+  }
+  .blok-info-rechts{
+    height: 90%;
+    margin: 10px;
+    color: whitesmoke;
+    line-height: normal;
+  }
+  .klinisch-title, .commercieel-title, .geentest-title{
+    color: white;
+    width: 90%;
+    float: left;
+    padding: 15px;
+  /* margin: 5px; */
+    margin-top: 10px;
+  }
+  .title-sub{
+    font-size: 25px;
+  }
+  .informatieblok1, .informatieblok2, .informatieblok3{
+    width: auto;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+}
+
+/* button arrow */
+#submit-btn1 {
+  margin-top: 0%;
+  margin-left: 0%;
+}
+#submit-btn2 {
+  margin-top: 0%;
+  margin-left: 0%;
+}
+a.button {
+  position: relative;
+ 
+  display: inline-block;
+  width: 25.6em;
+  height: 6.3em;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: left;
+  text-decoration: none;
+  line-height: 3em;
+  font-size: 1rem;
+  color: rgb(18,31,96);
+  cursor: pointer;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+a.button svg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+a.button svg g line,
+a.button svg g polyline,
+a.button svg g circle {
+  fill: none;
+  stroke: rgb(18,31,96);
+}
+a.button svg g line,
+a.button svg g polyline {
+  stroke-miterlimit: 10;
+}
+a.button svg g circle {
+  display: block;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.066em;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset ease-out 0.5s;
+}
+a.button font {
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+}
+a.button:hover {
+  -webkit-transform: translateZ(0) translateX(0.5em);
+          transform: translateZ(0) translateX(0.5em);
+}
+a.button:hover svg g circle {
+  stroke-dashoffset: 200;
 }

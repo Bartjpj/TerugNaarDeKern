@@ -42,78 +42,29 @@ $('input[type="checkbox"]').on('change', function() {
 });
 
 
-// $("#save_value1").click(function(){
-//   if ($('#v1a1').is(":checked") == true)
-//   {
-//   // it is checked
-//     huisarts +=1;
-//   }
-//
-//   else if($('#v1a1').is(":checked") == false){
-//     huisarts = 0;
-//     antwoord1 = 0;
-//   }
-//
-//   antwoord1+=huisarts;
-//   console.log('antwoord1 ',antwoord1);
-// });
-//
-// $("#save_value2").click(function(){
-//   if ($('#v1a1').is(":checked") == true)
-//   {
-//   // it is checked
-//     huisarts +=1;
-//   }
-//
-//   else if($('#v1a1').is(":checked") == false){
-//     huisarts = 0;
-//     antwoord1 = 0;
-//   }
-//
-//   antwoord1+=huisarts;
-//   console.log('antwoord1 ',antwoord1);
-// });
-// console.log('antwoord1 ',antwoord1);
+//slider
+$("document").ready(function() {
+  $(".slider").rangeslider();
+});
+$.fn.rangeslider = function(options) {
+  var obj = this;
+  var defautValue = obj.attr("value");
+  obj.wrap("<span class='range-slider'></span>");
+  obj.after("<span class='slider-container'><span class='bar'><span></span></span><span class='bar-btn'><span>0</span></span></span>");
+  obj.attr("oninput", "updateSlider(this)");
+  updateSlider(this);
+  return obj;
+};
 
-
-// var checked = []
-// $("input[name='group1[]']:checked").each(function ()
-// {
-//     checked.push(parseInt($(this).val()));
-// });
-// console.log(checked);
-
-
-
-
-
-// $(".btnv1").click(function(){
-  // if ($("input[name='group[]1']:checked")) {
-  //     antwoord1 +=1;
-  // };
-  // $('input[type="checkbox"]').on('change', function() {
-
-    // antwoord1 = 1;
-    // if ($("input[name='huisarts']:checked")){
-    //     huisarts+=1
-    // } else if ($("input[name='huisarts']").checked = false){
-    //   huisarts = 0;
-    // }
-    // if($('#v1a1').prop("checked") == true){
-    //     huisarts += 1;
-    // }
-    // else if($('#v1a1').prop("checked") == false){
-    //     huisarts = 0;
-    //     antwoord = 0;
-    // }
-    // console.log(huisarts);
-    // $('input[value="' + this.value + '"]').not(this).prop('checked', false);
-  // });
-// });
-// });
-
-// antwoord1+=huisarts;
-// console.log(btnv1.huisarts);
-
-
-// console.log(antwoord1);
+function updateSlider(passObj) {
+  var obj = $(passObj);
+  var value = obj.val();
+  var min = obj.attr("min");
+  var max = obj.attr("max");
+  var range = Math.round(max - min);
+  var percentage = Math.round((value - min) * 100 / range);
+  var nextObj = obj.next();
+  nextObj.find("span.bar-btn").css("left", percentage + "%");
+  nextObj.find("span.bar > span").css("width", percentage + "%");
+  nextObj.find("span.bar-btn > span").text(percentage);
+};
