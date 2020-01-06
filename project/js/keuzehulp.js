@@ -1,5 +1,9 @@
 console.log('keuzehulp.js is ingeladen');
 
+$('input[type="checkbox"]').on('change', function() {
+  $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+});
+
 // vraag 1 selectie
 var header1 = document.getElementById("vraag-1");
 var btns1 = header1.getElementsByClassName("btnv1");
