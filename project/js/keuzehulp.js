@@ -1,51 +1,119 @@
 console.log('keuzehulp.js is ingeladen');
 
+var antwoord1 = 0;
+var huisarts;
+var commercieel = 0;
+var geentest = 0;
+var val;
+// $(function(){
+//       $('#save_value1').click(function(){
+//         val = [];
+//         $(':checkbox:checked').each(function(i){
+//           val[i] = $(this).val();
+//           console.log(val);
+//         });
+//       });
+//     });
+
+// $('input[value="' + this.value + '"]').not(this).prop('checked', false);
+
 $('input[type="checkbox"]').on('change', function() {
   $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+  if($('#v1a1').is(':checked')){
+      huisarts+=1;
+      console.log('huisarts true',huisarts);
+  } else if($('#v1a1').not(':checked')){
+    huisarts = 0;
+    console.log('huisarts false',huisarts);
+  }
+  // if($('input[value="huisarts"]').not(this).prop('checked', false)){
+  //     huisarts+=1;
+  //     console.log('huisarts true',huisarts);
+  // }
+  //
+  // else if($('input[value="huisarts"]').prop('checked', true)){
+  //     huisarts = 0;
+  //     console.log('huisarts false',huisarts);
+  // }
+
+
+
+  // if($('input[value="huisarts"]').not(this).prop('checked', false));
 });
 
-// vraag 1 selectie
-var header1 = document.getElementById("vraag-1");
-var btns1 = header1.getElementsByClassName("btnv1");
-for (var i = 0; i < btns1.length; i++) {
-  btns1[i].addEventListener("click", function() {
-  var current1 = header1.getElementsByClassName("active");
-  
-  console.log('current 1 ' + current1);
-  if (current1.length > 0) {
-    current1[0].className = current1[0].className.replace(" active", "");
-     
-    var elem = document.getElementById('ext-gen26');
-    var txt = elem.textContent || elem.innerText;
-    console.log('info 1: ' + this.className );
-  }
-  this.className += " active";
 
-  });
-}
+// $("#save_value1").click(function(){
+//   if ($('#v1a1').is(":checked") == true)
+//   {
+//   // it is checked
+//     huisarts +=1;
+//   }
+//
+//   else if($('#v1a1').is(":checked") == false){
+//     huisarts = 0;
+//     antwoord1 = 0;
+//   }
+//
+//   antwoord1+=huisarts;
+//   console.log('antwoord1 ',antwoord1);
+// });
+//
+// $("#save_value2").click(function(){
+//   if ($('#v1a1').is(":checked") == true)
+//   {
+//   // it is checked
+//     huisarts +=1;
+//   }
+//
+//   else if($('#v1a1').is(":checked") == false){
+//     huisarts = 0;
+//     antwoord1 = 0;
+//   }
+//
+//   antwoord1+=huisarts;
+//   console.log('antwoord1 ',antwoord1);
+// });
+// console.log('antwoord1 ',antwoord1);
 
-// vraag 2 selectie
-var header2 = document.getElementById("vraag-2");
-var btns2 = header2.getElementsByClassName("btnv2");
-for (var i = 0; i < btns2.length; i++) {
-  btns2[i].addEventListener("click", function() {
-  var current2 = header2.getElementsByClassName("active");
-  if (current2.length > 0) {
-    current2[0].className = current2[0].className.replace(" active", "");
-  }
-  this.className += " active";
-  });
-}
 
-// vraag 2 selectie
-var header3 = document.getElementById("vraag-3");
-var btns3 = header3.getElementsByClassName("btnv3");
-for (var i = 0; i < btns3.length; i++) {
-  btns3[i].addEventListener("click", function() {
-  var current3 = header3.getElementsByClassName("active");
-  if (current3.length > 0) {
-    current3[0].className = curren3[0].className.replace(" active", "");
-  }
-  this.className += " active";
-  });
-}
+// var checked = []
+// $("input[name='group1[]']:checked").each(function ()
+// {
+//     checked.push(parseInt($(this).val()));
+// });
+// console.log(checked);
+
+
+
+
+
+// $(".btnv1").click(function(){
+  // if ($("input[name='group[]1']:checked")) {
+  //     antwoord1 +=1;
+  // };
+  // $('input[type="checkbox"]').on('change', function() {
+
+    // antwoord1 = 1;
+    // if ($("input[name='huisarts']:checked")){
+    //     huisarts+=1
+    // } else if ($("input[name='huisarts']").checked = false){
+    //   huisarts = 0;
+    // }
+    // if($('#v1a1').prop("checked") == true){
+    //     huisarts += 1;
+    // }
+    // else if($('#v1a1').prop("checked") == false){
+    //     huisarts = 0;
+    //     antwoord = 0;
+    // }
+    // console.log(huisarts);
+    // $('input[value="' + this.value + '"]').not(this).prop('checked', false);
+  // });
+// });
+// });
+
+// antwoord1+=huisarts;
+// console.log(btnv1.huisarts);
+
+
+// console.log(antwoord1);
