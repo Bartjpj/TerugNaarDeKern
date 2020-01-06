@@ -556,7 +556,21 @@ a.button:hover {
 a.button:hover svg g circle {
   stroke-dashoffset: 200;
 }
+/* svg */
+.cls-1 {
+  fill: #fff;
+}
+.cls-1:hover {
+  fill: #E94C4C;
+}
 
+.cls-2, .cls-3 {
+  stroke: none;
+}
+
+.cls-3 {
+  fill: #707070;
+}
   /* slider */
   
   .range-slider {
