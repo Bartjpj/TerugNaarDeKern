@@ -61,11 +61,13 @@ body {
 }
 .redish-naarres {
 
-  width: 20%;
+  width: 100%;
   text-align: center;
-	background-color:#FF5252;
+	background-color:rgba(255, 82, 82, 0.11);
   border-radius:28px;
-  margin-left: 60%;
+  margin-left: 280%;
+  float: left;
+  
   display:inline;
 	cursor:pointer;
 	color:#ffffff;
@@ -83,12 +85,15 @@ body {
 	position:relative;
 	top:1px;
 }
+#homebutn {
+  margin-bottom: 20px;
+}
 .redish-naarhome {
-  width: 20%;
+  /* width: 20%; */
   text-align: center;
-	background-color:#FF5252;
+	background-color:rgb(33, 50, 128);
   border-radius:28px;
-  margin-left: 50%;
+  margin-bottom:4% ;
   display:inline;
 	cursor:pointer;
 	color:#ffffff;
@@ -98,7 +103,8 @@ body {
   /* margin: 10%; */
 }
 .redish-naarhome:hover {
-	background-color:#E94C4C;
+  background-color:rgb(33, 50, 128);
+  font-size: 20px;
   text-decoration:none;
   color: white;
 }
@@ -127,6 +133,7 @@ body {
 #aarde{
   margin-left: -90px;
   width: 70%;
+
 }
 .vraag-tag, .vraag-tagxy{
   text-align: center;
@@ -351,6 +358,10 @@ html{
   #aarde{
     margin-left: 0;
     width: 70%;
+      position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
   }
   .vraag-tag, .vraag-tagxy{
     text-align: center;
@@ -630,6 +641,7 @@ a.button:hover svg g circle {
 .cls-2, .cls-3 {
   stroke: none;
 }
+
 .cls-3 {
   fill: #707070;
 }
