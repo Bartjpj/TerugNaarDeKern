@@ -1,4 +1,56 @@
 console.log('resultaten.js is ingeladen');
+var antwoord1 = localStorage.getItem("antwoord1");
+var antwoord2 = localStorage.getItem("antwoord2");
+var antwoord3 = localStorage.getItem("antwoord3");
+console.log(antwoord1);
+console.log(antwoord2);
+console.log(antwoord3);
+
+if(antwoord1 > antwoord2 && antwoord1 > antwoord3){
+  $(".informatieblok1").css('visibility', 'visible');
+  $('.klinisch-title').css('display', 'visible');
+  $('.commercieel-title').css('display', 'none');
+
+  $('.geentest-title').css('display', 'none');
+  $('.informatieblok2').css('display', 'none');
+  $('.informatieblok3').css('display', 'none');
+
+}else if (antwoord2 > antwoord1 && antwoord2 > antwoord3){
+  $(".informatieblok2").css('visibility', 'visible');
+  $('.informatieblok1').css('display', 'none');
+  $('.informatieblok3').css('display', 'none');
+
+  $('.commercieel-title').css('display', 'visible');
+  $('.klinisch-title').css('display', 'none');
+  $('.geentest-title').css('display', 'none');
+
+}else if(antwoord1 == antwoord2 == antwoord3){
+  $(".informatieblok1").css('visibility', 'visible');
+  $('.klinisch-title').css('display', 'visible');
+  $('.commercieel-title').css('display', 'none');
+
+  $('.geentest-title').css('display', 'none');
+  $('.informatieblok2').css('display', 'none');
+  $('.informatieblok3').css('display', 'none');
+}else if(antwoord3 > antwoord1 && antwoord3 > antwoord2){
+  $(".informatieblok3").css('visibility', 'visible');
+  $('.geentest-title').css('display', 'visible');
+  $('.commercieel-title').css('display', 'none');
+  $('.klinisch-title').css('display', 'none');
+
+  $('.informatieblok1').css('display', 'none');
+  $('.informatieblok2').css('display', 'none');
+}
+else{
+  $(".informatieblok3").css('visibility', 'visible');
+  $('.geentest-title').css('display', 'visible');
+  $('.commercieel-title').css('display', 'none');
+  $('.klinisch-title').css('display', 'none');
+
+  $('.informatieblok1').css('display', 'none');
+  $('.informatieblok2').css('display', 'none');
+}
+
 
 $('.klinisch-title').click(function (){
   $('.informatieblok1').css('display', 'block');
