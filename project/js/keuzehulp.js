@@ -273,7 +273,7 @@ $('input[type="checkbox"]').on('change', function() {
     } else {
       $('.chrom18').css({ fill: "#fff" });
     }
-    if(  $('input[name="group9[]"]').is(':checked') ) {
+    if(  $('input[name="group19[]"]').is(':checked') ) {
       $('.chrom19').css({ fill: "#E94C4C" });
     } else {
       $('.chrom19').css({ fill: "#fff" });
