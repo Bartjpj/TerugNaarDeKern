@@ -173,7 +173,7 @@ $('.popup-weetje').click(function() {
   $('.popup-weetje').css('z-index', '101');
 });
 
-$('.button').click(function() {
+$('.submit-btn1').click(function() {
   $('.popup-vraag').css('display', 'none');
   $('.overlay-dark').css('display', 'none');
   $('.popup-weetje').css('display', 'none');
@@ -181,7 +181,7 @@ $('.button').click(function() {
 
 $('input[type="checkbox"]').on('change', function() {
   $('input[name="' + this.name + '"]').not(this).prop('checked', false);
- 
+
     if(  $('input[name="group1[]"]').is(':checked') ) {
       $('.chrom1').css({ fill: "#E94C4C" });
     } else {
@@ -301,30 +301,41 @@ $('input[type="checkbox"]').on('change', function() {
       $('.chrom23').css({ fill: "#fff" });
     }
 
-    if(  $('input[name="group1[]"]').is(':checked') | $('input[name="group2[]"]').is(':checked') | $('input[name="group3[]"]').is(':checked') | $('input[name="group4[]"]').is(':checked') 
-    | $('input[name="group5[]"]').is(':checked') | $('input[name="group6[]"]').is(':checked') | $('input[name="group7[]"]').is(':checked') | $('input[name="group8[]"]').is(':checked') 
-    | $('input[name="group9[]"]').is(':checked') | $('input[name="group10[]"]').is(':checked') | $('input[name="group11[]"]').is(':checked') | $('input[name="group12[]"]').is(':checked') 
-    | $('input[name="group13[]"]').is(':checked') | $('input[name="group14[]"]').is(':checked') | $('input[name="group15[]"]').is(':checked') | $('input[name="group16[]"]').is(':checked') 
-    | $('input[name="group17[]"]').is(':checked') | $('input[name="group18[]"]').is(':checked') | $('input[name="group19[]"]').is(':checked') | $('input[name="group20[]"]').is(':checked') 
+    if(  $('input[name="group1[]"]').is(':checked') | $('input[name="group2[]"]').is(':checked') | $('input[name="group3[]"]').is(':checked') | $('input[name="group4[]"]').is(':checked')
+    | $('input[name="group5[]"]').is(':checked') | $('input[name="group6[]"]').is(':checked') | $('input[name="group7[]"]').is(':checked') | $('input[name="group8[]"]').is(':checked')
+    | $('input[name="group9[]"]').is(':checked') | $('input[name="group10[]"]').is(':checked') | $('input[name="group11[]"]').is(':checked') | $('input[name="group12[]"]').is(':checked')
+    | $('input[name="group13[]"]').is(':checked') | $('input[name="group14[]"]').is(':checked') | $('input[name="group15[]"]').is(':checked') | $('input[name="group16[]"]').is(':checked')
+    | $('input[name="group17[]"]').is(':checked') | $('input[name="group18[]"]').is(':checked') | $('input[name="group19[]"]').is(':checked') | $('input[name="group20[]"]').is(':checked')
     | $('input[name="group21[]"]').is(':checked') | $('input[name="group22[]"]').is(':checked') | $('input[name="group23[]"]').is(':checked')
     ) {
       $(".redish-naarres").css("background-color","rgba(255, 82, 82, 0.21)");
     }
-    if(  $('input[name="group1[]"]').is(':checked') && $('input[name="group2[]"]').is(':checked') && $('input[name="group3[]"]').is(':checked') && $('input[name="group4[]"]').is(':checked') 
-    && $('input[name="group5[]"]').is(':checked') && $('input[name="group6[]"]').is(':checked') && $('input[name="group7[]"]').is(':checked') && $('input[name="group8[]"]').is(':checked') 
-    && $('input[name="group9[]"]').is(':checked') && $('input[name="group10[]"]').is(':checked') && $('input[name="group11[]"]').is(':checked') && $('input[name="group12[]"]').is(':checked') 
-    && $('input[name="group13[]"]').is(':checked') && $('input[name="group14[]"]').is(':checked') && $('input[name="group15[]"]').is(':checked') && $('input[name="group16[]"]').is(':checked') 
-    && $('input[name="group17[]"]').is(':checked') && $('input[name="group18[]"]').is(':checked') && $('input[name="group19[]"]').is(':checked') && $('input[name="group20[]"]').is(':checked') 
+    if(  $('input[name="group1[]"]').is(':checked') && $('input[name="group2[]"]').is(':checked') && $('input[name="group3[]"]').is(':checked') && $('input[name="group4[]"]').is(':checked')
+    && $('input[name="group5[]"]').is(':checked') && $('input[name="group6[]"]').is(':checked') && $('input[name="group7[]"]').is(':checked') && $('input[name="group8[]"]').is(':checked')
+    && $('input[name="group9[]"]').is(':checked') && $('input[name="group10[]"]').is(':checked') && $('input[name="group11[]"]').is(':checked') && $('input[name="group12[]"]').is(':checked')
+    && $('input[name="group13[]"]').is(':checked') && $('input[name="group14[]"]').is(':checked') && $('input[name="group15[]"]').is(':checked') && $('input[name="group16[]"]').is(':checked')
+    && $('input[name="group17[]"]').is(':checked') && $('input[name="group18[]"]').is(':checked') && $('input[name="group19[]"]').is(':checked') && $('input[name="group20[]"]').is(':checked')
     && $('input[name="group21[]"]').is(':checked') && $('input[name="group22[]"]').is(':checked') && $('input[name="group23[]"]').is(':checked')
     ) {
       $(".redish-naarres").css("background-color","rgba(255, 82, 82, 0.91)");
     }
-  
+
 });
 
 //slider
 $("document").ready(function() {
   $(".slider").rangeslider();
+  $('.overlay-dark-startup').css('opacity', '0.7');
+  if($(window).width() >= 768){
+    $('.start-popup').css('width', '40%');
+  };
+  if($(window).width() <= 768){
+    $('.start-popup').css('width', '90%');
+  }
+  setTimeout(function(){
+    $('#load-in').css('opacity', '1');
+    $('.submit-btn1').css('display', 'block');    
+  }, 700);
 });
 $.fn.rangeslider = function(options) {
   var obj = this;
@@ -348,3 +359,26 @@ function updateSlider(passObj) {
   nextObj.find("span.bar > span").css("width", percentage + "%");
   nextObj.find("span.bar-btn > span").text(percentage);
 };
+
+$('.overlay-dark-startup').click(function(){
+  $('.start-popup').css('width', "0%");
+  $('#load-in').css('display', 'none');
+  $('.overlay-dark-startup').css('opacity', '0');
+  $('.submit-btn1').css('display', 'none');
+  setTimeout(function(){
+    $('.overlay-dark-startup').css('display', 'none');
+    $('.start-popup').css('display', 'none');
+
+  }, 1000);
+});
+
+$('.submit-btn1').click(function(){
+  $('.start-popup').css('width', "0%");
+  $('#load-in').css('display', 'none');
+  $('.overlay-dark-startup').css('opacity', '0');
+  $('.submit-btn1').css('display', 'none');
+  setTimeout(function(){
+    $('.overlay-dark-startup').css('display', 'none');
+    $('.start-popup').css('display', 'none');
+  }, 1000);
+});
