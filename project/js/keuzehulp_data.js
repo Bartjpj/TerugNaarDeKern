@@ -50,7 +50,6 @@ $('input[type="checkbox"]').on('change', function() {
   if($('#v9a1').is(':checked')){geentest9=1} else if($('#v9a1').not(':checked')){geentest9=0;}
 
   if($('#v10a1').is(':checked')){huisarts10=1; commercieel10=1} else if($('#v10a1').not(':checked')){huisarts10=0; commercieel10=0;}
-
   if($('#v10a2').is(':checked')){geentest10=1} else if($('#v10a2').not(':checked')){geentest10=0;}
 
   if($('#v11a1').is(':checked')){huisarts11=1} else if($('#v11a1').not(':checked')){huisarts11=0;}
