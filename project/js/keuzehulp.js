@@ -1,6 +1,44 @@
 console.log('keuzehulp.js is ingeladen');
-//vraag 18, 19, 20 wel
-//vraag 14 en 23 = schaalverdeling 
+
+var antwoord1 = 0;
+var huisarts;
+var commercieel = 0;
+var geentest = 0;
+var val;
+// $(function(){
+//       $('#save_value1').click(function(){
+//         val = [];
+//         $(':checkbox:checked').each(function(i){
+//           val[i] = $(this).val();
+//           console.log(val);
+//         });
+//       });
+//     });
+
+// $('input[value="' + this.value + '"]').not(this).prop('checked', false);
+
+// if($('#v1a1').is(':checked')){
+//   huisarts+=1;
+//   console.log('huisarts true',huisarts);
+// } else if($('#v1a1').not(':checked')){
+// huisarts = 0;
+// console.log('huisarts false',huisarts);
+// }
+// if($('input[value="huisarts"]').not(this).prop('checked', false)){
+//     huisarts+=1;
+//     console.log('huisarts true',huisarts);
+// }
+//
+// else if($('input[value="huisarts"]').prop('checked', true)){
+//     huisarts = 0;
+//     console.log('huisarts false',huisarts);
+// }
+
+
+
+// if($('input[value="huisarts"]').not(this).prop('checked', false));
+// });
+
 $('input[type="checkbox"]').on('change', function() {
   $('input[name="' + this.name + '"]').not(this).prop('checked', false);
  
@@ -105,6 +143,7 @@ $('input[type="checkbox"]').on('change', function() {
     } else {
       $('.chrom20').css({ fill: "#fff" });
     }
+
 
     if(  $('input[name="group21[]"]').is(':checked') ) {
       $('.chrom21').css({ fill: "#E94C4C" });
