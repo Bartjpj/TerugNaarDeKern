@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="665.514" height="766.94" viewBox="0 0 665.514 766.94">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #e6e0c6;
+      }
+
+      .cls-3 {
+        font-size: 100px;
+        font-family: HighTowerText-Reg, High Tower Text;
+        letter-spacing: 0.2em;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5 {
+        fill: #959494;
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-7 {
+        fill: #c5c0aa;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="253" height="481"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect class="cls-1" width="226" height="481"/>
+    </clipPath>
+  </defs>
+  <g id="hst1-youcard-svg" transform="translate(-934.216 -409.99) rotate(9)">
+    <path id="Path_108" data-name="Path 108" class="cls-2" d="M79.647,0H565V687H0V78.7Z" transform="translate(1093 242)"/>
+    <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1225 267)">
+      <text id="YOU" class="cls-3" transform="translate(0 90)"><tspan x="0" y="0">YOU</tspan></text>
+    </g>
+    <g id="Repeat_Grid_2" data-name="Repeat Grid 2" class="cls-4" transform="translate(1132 412)">
+      <g transform="translate(-1117 -439)">
+        <rect id="Rectangle_86" data-name="Rectangle 86" class="cls-5" width="188" height="16" rx="8" transform="translate(1117 439)"/>
+        <rect id="Rectangle_87" data-name="Rectangle 87" class="cls-5" width="245" height="17" rx="8.5" transform="translate(1117 475)"/>
+      </g>
+      <g transform="translate(-1117 -337)">
+        <rect id="Rectangle_86-2" data-name="Rectangle 86" class="cls-5" width="188" height="16" rx="8" transform="translate(1117 439)"/>
+        <rect id="Rectangle_87-2" data-name="Rectangle 87" class="cls-5" width="245" height="17" rx="8.5" transform="translate(1117 475)"/>
+      </g>
+      <g transform="translate(-1117 -235)">
+        <rect id="Rectangle_86-3" data-name="Rectangle 86" class="cls-5" width="188" height="16" rx="8" transform="translate(1117 439)"/>
+        <rect id="Rectangle_87-3" data-name="Rectangle 87" class="cls-5" width="245" height="17" rx="8.5" transform="translate(1117 475)"/>
+      </g>
+      <g transform="translate(-1117 -133)">
+        <rect id="Rectangle_86-4" data-name="Rectangle 86" class="cls-5" width="188" height="16" rx="8" transform="translate(1117 439)"/>
+        <rect id="Rectangle_87-4" data-name="Rectangle 87" class="cls-5" width="245" height="17" rx="8.5" transform="translate(1117 475)"/>
+      </g>
+      <g transform="translate(-1117 -31)">
+        <rect id="Rectangle_86-5" data-name="Rectangle 86" class="cls-5" width="188" height="16" rx="8" transform="translate(1117 439)"/>
+        <rect id="Rectangle_87-5" data-name="Rectangle 87" class="cls-5" width="245" height="17" rx="8.5" transform="translate(1117 475)"/>
+      </g>
+    </g>
+    <g id="Repeat_Grid_3" data-name="Repeat Grid 3" class="cls-6" transform="translate(1404 412)">
+      <g transform="translate(-1117 -439)">
+        <rect id="Rectangle_86-6" data-name="Rectangle 86" class="cls-5" width="217" height="16" rx="8" transform="translate(1117 439)"/>
+        <rect id="Rectangle_87-6" data-name="Rectangle 87" class="cls-5" width="179" height="16" rx="8" transform="translate(1117 475)"/>
+      </g>
+      <g transform="translate(-1117 -337)">
+        <rect id="Rectangle_86-7" data-name="Rectangle 86" class="cls-5" width="217" height="16" rx="8" transform="translate(1117 439)"/>
+        <rect id="Rectangle_87-7" data-name="Rectangle 87" class="cls-5" width="179" height="16" rx="8" transform="translate(1117 475)"/>
+      </g>
+      <g transform="translate(-1117 -235)">
+        <rect id="Rectangle_86-8" data-name="Rectangle 86" class="cls-5" width="217" height="16" rx="8" transform="translate(1117 439)"/>
+        <rect id="Rectangle_87-8" data-name="Rectangle 87" class="cls-5" width="179" height="16" rx="8" transform="translate(1117 475)"/>
+      </g>
+      <g transform="translate(-1117 -133)">
+        <rect id="Rectangle_86-9" data-name="Rectangle 86" class="cls-5" width="217" height="16" rx="8" transform="translate(1117 439)"/>
+        <rect id="Rectangle_87-9" data-name="Rectangle 87" class="cls-5" width="179" height="16" rx="8" transform="translate(1117 475)"/>
+      </g>
+      <g transform="translate(-1117 -31)">
+        <rect id="Rectangle_86-10" data-name="Rectangle 86" class="cls-5" width="217" height="16" rx="8" transform="translate(1117 439)"/>
+        <rect id="Rectangle_87-10" data-name="Rectangle 87" class="cls-5" width="179" height="16" rx="8" transform="translate(1117 475)"/>
+      </g>
+    </g>
+    <path id="Path_109" data-name="Path 109" class="cls-7" d="M79.67,0l-.1,78.857L-.083,78.751Z" transform="translate(1093 242)"/>
+  </g>
+</svg>
