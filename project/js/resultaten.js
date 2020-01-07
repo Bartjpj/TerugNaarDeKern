@@ -3,7 +3,7 @@ $(window).ready(function() { // makes sure the whole site is loaded
   console.log('resultaten.js is ingeladen');
 // preload start
   $("#status").fadeOut(); // will first fade out the loading animation
-  $("#preloader").delay(30).fadeOut("slow"); // will fade out the white DIV that covers the website.
+  $("#preloader").delay(3500).fadeOut("slow"); // will fade out the white DIV that covers the website.
 
 
 // Animated CSS preloader from http://tobiasahlin.com/spinkit/
