@@ -88,19 +88,6 @@ p{
   color: white;
 }
 
-.intro p{
-	width: 600px;
-	/* margin: 30px auto; */
-	font-size: 1.5em;
-}
-
-.intro h1{
-	/* margin: auto auto 70px auto; */
-}
-
-.intro h1, .intro p{
-  margin-left: 110px;
-}
 
 .imgcontainer{
   float: left;
@@ -185,6 +172,46 @@ body.fp-viewing-firstPage #menu{
   margin: 30px;
 } */
 
+.img-right{
+  width: 40%;
+  height: auto;
+  position: relative;
+  right: 5%;
+  bottom: 5%;
+  float:right;
+}
+.img-big{
+  width: 70%;
+}
+
+  .intro h1{
+    font-size: 3em;
+    width: 80%;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 3px;
+    /* margin: 40px auto auto 40px; */
+    margin-bottom: 20px;
+  }
+
+  .intro p{
+    font-size: 1.5em;
+    width: 100%;
+    text-align: left;
+    /* margin: 40px auto auto 40px; */
+  }
+
+  /* container waar alle info in staat */
+.intro{
+  margin-left: 80px;
+  height: auto;
+  width: 40%;
+  float: left;
+  position: relative;
+  left: 0;
+  /* top: 10vh; */
+}
+
 #section0{
     background-image: url('../imgs/elipses.svg');
     height: auto;
@@ -262,7 +289,7 @@ a#linktext{
 	display: block;
 
 	cursor:pointer;
-	color:#ffffff;
+	color: white;
 	font-size:17px;
 	padding:16px 31px;
 	text-decoration:none;
@@ -376,9 +403,6 @@ div.infoblock h1{
     overflow-x: hidden;
   }
 
-  #menu{
-    width: 10%;
-  }
   .section#section0 .fp-tableCell{
     vertical-align: baseline;
   }
@@ -392,19 +416,6 @@ div.infoblock h1{
     margin: 30px auto 50px auto !important;
   }
 
-  .intro h1{
-    font-size: 2.0em;
-    width: 80%;
-    text-align: left;
-    margin: 40px auto auto 40px;
-  }
-
-  .intro p{
-    font-size: 1.5em;
-    width: 75%;
-    text-align: left;
-    margin: 40px auto auto 40px;
-  }
 
   .footer p{
     font-size: 1.5em;
@@ -517,6 +528,22 @@ div.infoblock h1{
     margin: 20px;
     height: 70%;
   }
+
+  .intro{
+    margin-left: 10%;
+    width: 70%;
+  }
+  .intro p{
+    font-size: 14px;
+  }
+  .intro h1{
+    font-size: 1em;
+  }
+  .smaller{
+    width: 40%;
+  
+  }
+
 }
 
 @media screen and (max-width: 414px) {

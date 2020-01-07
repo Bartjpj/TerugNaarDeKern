@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="517.46" height="555.883" viewBox="0 0 517.46 555.883">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4b0b67;
+      }
+
+      .cls-2 {
+        fill: #fb7611;
+      }
+
+      .cls-3 {
+        fill: #ff5252;
+      }
+
+      .cls-4 {
+        fill: #5893ff;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #9a906a;
+        stroke-width: 20px;
+      }
+    </style>
+  </defs>
+  <g id="h4-rna-svg" transform="translate(3050.06 -4954.556) rotate(41)">
+    <rect id="Rectangle_15" data-name="Rectangle 15" class="cls-1" width="83.084" height="27.927" transform="translate(1243 6024.233)"/>
+    <rect id="Rectangle_17" data-name="Rectangle 17" class="cls-2" width="83.084" height="27.927" transform="translate(1243 5976.756)"/>
+    <rect id="Rectangle_18" data-name="Rectangle 18" class="cls-2" width="83.084" height="27.927" transform="translate(1326.084 5842.705)"/>
+    <path id="Path_17" data-name="Path 17" class="cls-3" d="M0,0H83.084V27.927H0Z" transform="translate(1326.084 5795.229)"/>
+    <path id="Path_20" data-name="Path 20" class="cls-3" d="M0,0H83.084V27.927H0Z" transform="translate(1326.084 5751.243)"/>
+    <path id="Path_18" data-name="Path 18" class="cls-4" d="M0,0H83.084V27.927H0Z" transform="translate(1326.084 5703.766)"/>
+    <path id="Path_19" data-name="Path 19" class="cls-2" d="M0,0H83.084V27.927H0Z" transform="translate(1326.084 5656.29)"/>
+    <rect id="Rectangle_22" data-name="Rectangle 22" class="cls-3" width="83.084" height="27.927" transform="translate(1243 5542.486)"/>
+    <rect id="Rectangle_26" data-name="Rectangle 26" class="cls-1" width="83.084" height="27.927" transform="translate(1243 5501.991)"/>
+    <path id="Path_14" data-name="Path 14" class="cls-5" d="M0-122.783v86.742L165.668,33.352v234.87L0,344.351V452.37" transform="translate(1243.349 5615.5)"/>
+  </g>
+</svg>
