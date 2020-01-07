@@ -169,11 +169,17 @@ $('.popup-weetje').click(function() {
   $('.popup-weetje').css('z-index', '101');
 });
 
-$('.submit-btn1').click(function() {
+$('.button').click(function() {
   $('.popup-vraag').css('display', 'none');
   $('.overlay-dark').css('display', 'none');
   $('.popup-weetje').css('display', 'none');
 });
+
+// $('.submit-btn1').click(function() {
+//   $('.popup-vraag').css('display', 'none');
+//   $('.overlay-dark').css('display', 'none');
+//   $('.popup-weetje').css('display', 'none');
+// });
 
 $('input[type="checkbox"]').on('change', function() {
   $('input[name="' + this.name + '"]').not(this).prop('checked', false);
@@ -378,3 +384,4 @@ $('.submit-btn1').click(function(){
     $('.start-popup').css('display', 'none');
   }, 1000);
 });
+
