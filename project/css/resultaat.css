@@ -89,7 +89,7 @@ opacity: 1;
 .klinisch-title, .commercieel-title, .geentest-title{
   /* background-color: #002064; */
   /* background-color:  #4943d3; */
-  background-color: #09286A;
+  background-color: #ee5052;
   text-align: center;
   border-radius: 25px;
   font-weight: bold;
@@ -128,8 +128,8 @@ opacity: 1;
   width: auto;
   padding: 1px 30px 10px 30px;
   clear: both;
-  display: none;
-  opacity: 0;
+  display: block;
+  opacity: 1;
   transition: opacity 0.5s;
   visibility: hidden;
 }
@@ -137,8 +137,8 @@ opacity: 1;
   width: auto;
   padding: 1px 30px 10px 30px;
   clear: both;
-  display: none;
-  opacity: 0;
+  display: block;
+  opacity: 1;
   transition: opacity 0.5s;
   visibility: hidden;
 }

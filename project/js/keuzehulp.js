@@ -175,6 +175,12 @@ $('.button').click(function() {
   $('.popup-weetje').css('display', 'none');
 });
 
+// $('.submit-btn1').click(function() {
+//   $('.popup-vraag').css('display', 'none');
+//   $('.overlay-dark').css('display', 'none');
+//   $('.popup-weetje').css('display', 'none');
+// });
+
 $('input[type="checkbox"]').on('change', function() {
   $('input[name="' + this.name + '"]').not(this).prop('checked', false);
 
@@ -321,6 +327,17 @@ $('input[type="checkbox"]').on('change', function() {
 //slider
 $("document").ready(function() {
   $(".slider").rangeslider();
+  $('.overlay-dark-startup').css('opacity', '0.7');
+  if($(window).width() >= 768){
+    $('.start-popup').css('width', '40%');
+  };
+  if($(window).width() <= 768){
+    $('.start-popup').css('width', '90%');
+  }
+  setTimeout(function(){
+    $('#load-in').css('opacity', '1');
+    $('.submit-btn1').css('display', 'block');    
+  }, 700);
 });
 $.fn.rangeslider = function(options) {
   var obj = this;
@@ -344,3 +361,27 @@ function updateSlider(passObj) {
   nextObj.find("span.bar > span").css("width", percentage + "%");
   nextObj.find("span.bar-btn > span").text(percentage);
 };
+
+$('.overlay-dark-startup').click(function(){
+  $('.start-popup').css('width', "0%");
+  $('#load-in').css('display', 'none');
+  $('.overlay-dark-startup').css('opacity', '0');
+  $('.submit-btn1').css('display', 'none');
+  setTimeout(function(){
+    $('.overlay-dark-startup').css('display', 'none');
+    $('.start-popup').css('display', 'none');
+
+  }, 1000);
+});
+
+$('.submit-btn1').click(function(){
+  $('.start-popup').css('width', "0%");
+  $('#load-in').css('display', 'none');
+  $('.overlay-dark-startup').css('opacity', '0');
+  $('.submit-btn1').css('display', 'none');
+  setTimeout(function(){
+    $('.overlay-dark-startup').css('display', 'none');
+    $('.start-popup').css('display', 'none');
+  }, 1000);
+});
+

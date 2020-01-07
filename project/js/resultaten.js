@@ -3,7 +3,8 @@ $(window).ready(function() { // makes sure the whole site is loaded
   console.log('resultaten.js is ingeladen');
 // preload start
   $("#status").fadeOut(); // will first fade out the loading animation
-  $("#preloader").delay(3500).fadeOut("slow"); // will fade out the white DIV that covers the website.
+  $("#preloader").delay(30).fadeOut("slow"); // will fade out the white DIV that covers the website.
+
 
 // Animated CSS preloader from http://tobiasahlin.com/spinkit/
 // Excellent preloader example found here: http://ismet.me/index.htm
@@ -20,6 +21,7 @@ if(antwoord1 > antwoord2 && antwoord1 > antwoord3){
   $(".informatieblok1").css('visibility', 'visible');
   $('.klinisch-title').css('display', 'visible');
   $('.commercieel-title').css('display', 'none');
+  
 
   $('.geentest-title').css('display', 'none');
   $('.informatieblok2').css('display', 'none');
@@ -29,19 +31,22 @@ if(antwoord1 > antwoord2 && antwoord1 > antwoord3){
   $(".informatieblok2").css('visibility', 'visible');
   $('.informatieblok1').css('display', 'none');
   $('.informatieblok3').css('display', 'none');
+  $('.resul').css('display', 'visible');
 
   $('.commercieel-title').css('display', 'visible');
   $('.klinisch-title').css('display', 'none');
   $('.geentest-title').css('display', 'none');
 
-}else if(antwoord1 == antwoord2 == antwoord3){
-  $(".informatieblok1").css('visibility', 'visible');
-  $('.klinisch-title').css('display', 'visible');
-  $('.commercieel-title').css('display', 'none');
-
-  $('.geentest-title').css('display', 'none');
-  $('.informatieblok2').css('display', 'none');
+}else if (antwoord2 == antwoord1 == antwoord3){
+  $(".informatieblok2").css('visibility', 'visible');
+  $('.informatieblok1').css('display', 'none');
   $('.informatieblok3').css('display', 'none');
+  $('.resul').css('display', 'visible');
+
+  $('.commercieel-title').css('display', 'visible');
+  $('.klinisch-title').css('display', 'none');
+  $('.geentest-title').css('display', 'none');
+
 }else if(antwoord3 > antwoord1 && antwoord3 > antwoord2){
   $(".informatieblok3").css('visibility', 'visible');
   $('.geentest-title').css('display', 'visible');
@@ -50,6 +55,8 @@ if(antwoord1 > antwoord2 && antwoord1 > antwoord3){
 
   $('.informatieblok1').css('display', 'none');
   $('.informatieblok2').css('display', 'none');
+
+  
 }
 else{
   $(".informatieblok3").css('visibility', 'visible');
@@ -142,3 +149,4 @@ setTimeout("typeWriter()", 1500);
 
 
 })
+
