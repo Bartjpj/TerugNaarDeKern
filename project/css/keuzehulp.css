@@ -506,6 +506,12 @@ input[type="checkbox"]:checked  + label {
   margin-top: 18%;
   margin-left: 50%;
 }
+#res-btn {
+  margin-left: 280%;
+  color:rgba(255, 82, 82, 1);
+  margin-top: 0%;
+  margin-left: 0%;
+}
 a.button {
   position: relative;
 
@@ -538,6 +544,24 @@ a.button svg g circle {
   fill: none;
   stroke: #fff;
 }
+#res-btn svg g circle {
+  opacity: 0;
+}
+#res-btn svg g line,
+#res-btn svg g polyline,
+#res-btn svg g circle {
+  fill: none;
+  stroke: rgba(255, 82, 82, 1);
+}
+.overlay-btn{
+  margin-top: 1%;
+  margin-left: 97%;
+  opacity: 0.3;
+}
+.overlay-btn:hover{
+  opacity: 0.7;
+}
+
 a.button svg g line,
 a.button svg g polyline {
   stroke-miterlimit: 10;
@@ -562,6 +586,9 @@ a.button font {
 a.button:hover {
   -webkit-transform: translateZ(0) translateX(0.5em);
           transform: translateZ(0) translateX(0.5em);
+          
+          transform: scale(1.2);
+          
 }
 a.button:hover svg g circle {
   stroke-dashoffset: 200;

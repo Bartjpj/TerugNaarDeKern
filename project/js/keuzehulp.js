@@ -1,9 +1,5 @@
 console.log('keuzehulp.js is ingeladen');
 
-var antwoord1 = 0;
-var huisarts;
-var commercieel = 0;
-var geentest = 0;
 var val;
 // $(function(){
 //       $('#save_value1').click(function(){
@@ -308,7 +304,7 @@ $('input[type="checkbox"]').on('change', function() {
     | $('input[name="group17[]"]').is(':checked') | $('input[name="group18[]"]').is(':checked') | $('input[name="group19[]"]').is(':checked') | $('input[name="group20[]"]').is(':checked')
     | $('input[name="group21[]"]').is(':checked') | $('input[name="group22[]"]').is(':checked') | $('input[name="group23[]"]').is(':checked')
     ) {
-      $(".redish-naarres").css("background-color","rgba(255, 82, 82, 0.21)");
+      $(".overlay-btn").css("opacity","0.4");
     }
     if(  $('input[name="group1[]"]').is(':checked') && $('input[name="group2[]"]').is(':checked') && $('input[name="group3[]"]').is(':checked') && $('input[name="group4[]"]').is(':checked')
     && $('input[name="group5[]"]').is(':checked') && $('input[name="group6[]"]').is(':checked') && $('input[name="group7[]"]').is(':checked') && $('input[name="group8[]"]').is(':checked')
@@ -317,7 +313,7 @@ $('input[type="checkbox"]').on('change', function() {
     && $('input[name="group17[]"]').is(':checked') && $('input[name="group18[]"]').is(':checked') && $('input[name="group19[]"]').is(':checked') && $('input[name="group20[]"]').is(':checked')
     && $('input[name="group21[]"]').is(':checked') && $('input[name="group22[]"]').is(':checked') && $('input[name="group23[]"]').is(':checked')
     ) {
-      $(".redish-naarres").css("background-color","rgba(255, 82, 82, 0.91)");
+      $(".overlay-btn").css("opacity","1");
     }
 
 });
