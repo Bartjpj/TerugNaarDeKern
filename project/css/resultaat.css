@@ -98,6 +98,7 @@ opacity: 1;
 
   cursor: pointer;
   transition: background-color 0.7s;
+  
 }
 .klinisch-title{
   background-color: #ee5052;
@@ -116,6 +117,7 @@ opacity: 1;
   display: block;
   opacity: 1;
   transition: opacity 0.5s;
+  visibility: hidden;
 }
 .informatieblok2{
   width: auto;
@@ -124,6 +126,7 @@ opacity: 1;
   display: none;
   opacity: 0;
   transition: opacity 0.5s;
+  visibility: hidden;
 }
 .informatieblok3{
   width: auto;
@@ -132,6 +135,7 @@ opacity: 1;
   display: none;
   opacity: 0;
   transition: opacity 0.5s;
+  visibility: hidden;
 }
 .informatieblok1, .informatieblok2, .informatieblok3{
   font-size: 17px;
@@ -212,7 +216,7 @@ opacity: 1;
 }
 a.button {
   position: relative;
- 
+
   display: inline-block;
   width: 25.6em;
   height: 6.3em;

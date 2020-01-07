@@ -1,9 +1,5 @@
 console.log('keuzehulp.js is ingeladen');
 
-var antwoord1 = 0;
-var huisarts;
-var commercieel = 0;
-var geentest = 0;
 var val;
 // $(function(){
 //       $('#save_value1').click(function(){
@@ -181,7 +177,7 @@ $('.button').click(function() {
 
 $('input[type="checkbox"]').on('change', function() {
   $('input[name="' + this.name + '"]').not(this).prop('checked', false);
- 
+
     if(  $('input[name="group1[]"]').is(':checked') ) {
       $('.chrom1').css({ fill: "#E94C4C" });
     } else {
@@ -301,25 +297,25 @@ $('input[type="checkbox"]').on('change', function() {
       $('.chrom23').css({ fill: "#fff" });
     }
 
-    if(  $('input[name="group1[]"]').is(':checked') | $('input[name="group2[]"]').is(':checked') | $('input[name="group3[]"]').is(':checked') | $('input[name="group4[]"]').is(':checked') 
-    | $('input[name="group5[]"]').is(':checked') | $('input[name="group6[]"]').is(':checked') | $('input[name="group7[]"]').is(':checked') | $('input[name="group8[]"]').is(':checked') 
-    | $('input[name="group9[]"]').is(':checked') | $('input[name="group10[]"]').is(':checked') | $('input[name="group11[]"]').is(':checked') | $('input[name="group12[]"]').is(':checked') 
-    | $('input[name="group13[]"]').is(':checked') | $('input[name="group14[]"]').is(':checked') | $('input[name="group15[]"]').is(':checked') | $('input[name="group16[]"]').is(':checked') 
-    | $('input[name="group17[]"]').is(':checked') | $('input[name="group18[]"]').is(':checked') | $('input[name="group19[]"]').is(':checked') | $('input[name="group20[]"]').is(':checked') 
+    if(  $('input[name="group1[]"]').is(':checked') | $('input[name="group2[]"]').is(':checked') | $('input[name="group3[]"]').is(':checked') | $('input[name="group4[]"]').is(':checked')
+    | $('input[name="group5[]"]').is(':checked') | $('input[name="group6[]"]').is(':checked') | $('input[name="group7[]"]').is(':checked') | $('input[name="group8[]"]').is(':checked')
+    | $('input[name="group9[]"]').is(':checked') | $('input[name="group10[]"]').is(':checked') | $('input[name="group11[]"]').is(':checked') | $('input[name="group12[]"]').is(':checked')
+    | $('input[name="group13[]"]').is(':checked') | $('input[name="group14[]"]').is(':checked') | $('input[name="group15[]"]').is(':checked') | $('input[name="group16[]"]').is(':checked')
+    | $('input[name="group17[]"]').is(':checked') | $('input[name="group18[]"]').is(':checked') | $('input[name="group19[]"]').is(':checked') | $('input[name="group20[]"]').is(':checked')
     | $('input[name="group21[]"]').is(':checked') | $('input[name="group22[]"]').is(':checked') | $('input[name="group23[]"]').is(':checked')
     ) {
       $(".overlay-btn").css("opacity","0.4");
     }
-    if(  $('input[name="group1[]"]').is(':checked') && $('input[name="group2[]"]').is(':checked') && $('input[name="group3[]"]').is(':checked') && $('input[name="group4[]"]').is(':checked') 
-    && $('input[name="group5[]"]').is(':checked') && $('input[name="group6[]"]').is(':checked') && $('input[name="group7[]"]').is(':checked') && $('input[name="group8[]"]').is(':checked') 
-    && $('input[name="group9[]"]').is(':checked') && $('input[name="group10[]"]').is(':checked') && $('input[name="group11[]"]').is(':checked') && $('input[name="group12[]"]').is(':checked') 
-    && $('input[name="group13[]"]').is(':checked') && $('input[name="group14[]"]').is(':checked') && $('input[name="group15[]"]').is(':checked') && $('input[name="group16[]"]').is(':checked') 
-    && $('input[name="group17[]"]').is(':checked') && $('input[name="group18[]"]').is(':checked') && $('input[name="group19[]"]').is(':checked') && $('input[name="group20[]"]').is(':checked') 
+    if(  $('input[name="group1[]"]').is(':checked') && $('input[name="group2[]"]').is(':checked') && $('input[name="group3[]"]').is(':checked') && $('input[name="group4[]"]').is(':checked')
+    && $('input[name="group5[]"]').is(':checked') && $('input[name="group6[]"]').is(':checked') && $('input[name="group7[]"]').is(':checked') && $('input[name="group8[]"]').is(':checked')
+    && $('input[name="group9[]"]').is(':checked') && $('input[name="group10[]"]').is(':checked') && $('input[name="group11[]"]').is(':checked') && $('input[name="group12[]"]').is(':checked')
+    && $('input[name="group13[]"]').is(':checked') && $('input[name="group14[]"]').is(':checked') && $('input[name="group15[]"]').is(':checked') && $('input[name="group16[]"]').is(':checked')
+    && $('input[name="group17[]"]').is(':checked') && $('input[name="group18[]"]').is(':checked') && $('input[name="group19[]"]').is(':checked') && $('input[name="group20[]"]').is(':checked')
     && $('input[name="group21[]"]').is(':checked') && $('input[name="group22[]"]').is(':checked') && $('input[name="group23[]"]').is(':checked')
     ) {
       $(".overlay-btn").css("opacity","1");
     }
-  
+
 });
 
 //slider
