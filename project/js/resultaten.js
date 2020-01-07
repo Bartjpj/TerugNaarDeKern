@@ -3,9 +3,8 @@ $(window).ready(function() { // makes sure the whole site is loaded
   console.log('resultaten.js is ingeladen');
 // preload start
   $("#status").fadeOut(); // will first fade out the loading animation
-  $("#preloader").delay(400).fadeOut("slow"); // will fade out the white DIV that covers the website.
+  $("#preloader").delay(3500).fadeOut("slow"); // will fade out the white DIV that covers the website.
 
-  
 // Animated CSS preloader from http://tobiasahlin.com/spinkit/
 // Excellent preloader example found here: http://ismet.me/index.htm
 // preload end
@@ -110,5 +109,36 @@ $('.geentest-title').click(function (){
       $('.informatieblok3').css('opacity', '1');
   },100);
 });
+
+// type
+
+// typing effect
+var i = 0;
+var txt =
+'Welkom!  ';
+
+
+var speed = 80;
+
+// document.getElementById('start-welkomtekst').onclick = typeWriter();
+
+  function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typedemo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+function revealInfoblock() {
+  var infoblock = $('#begininfoblock');
+  infoblock.animate({
+    opacity: '1'
+  }, 500);
+}
+
+setTimeout("revealInfoblock()", 1000);
+setTimeout("typeWriter()", 1500);
+
 
 })

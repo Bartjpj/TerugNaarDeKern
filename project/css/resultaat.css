@@ -3,6 +3,9 @@ body {
     font: normal 400 20px/1 'Josefin Sans', sans-serif;
     overflow: hidden;
 }
+.resul{
+  font-size: 60px;
+}
 .bottom-nav{
   width: 100%;
   position: absolute;
@@ -54,8 +57,8 @@ opacity: 1;
 .alg-title{
   color: black;
   text-align: center;
-  margin: 40px;
-  font-size: 70px;
+  margin: 30px;
+  font-size: 65px;
 }
 .algemene-info{
   font-size: 15px;
@@ -110,7 +113,9 @@ opacity: 1;
 .title-sub{
   font-size: 40px;
 }
+
 .informatieblok1{
+
   width: auto;
   padding: 1px 30px 10px 30px;
   clear: both;
@@ -206,6 +211,10 @@ opacity: 1;
 }
 
 /* button arrow */
+.bottom-nav{
+  margin-top: -40%;
+  display: inline;
+}
 #submit-btn1 {
   margin-top: 0%;
   margin-left: 0%;
@@ -219,7 +228,7 @@ a.button {
 
   display: inline-block;
   width: 25.6em;
-  height: 6.3em;
+  height: 3.3em;
   overflow: hidden;
   vertical-align: middle;
   text-align: left;
@@ -239,6 +248,9 @@ a.button svg {
   position: absolute;
   top: 0;
   left: 0;
+}
+a.button svg g circle{
+  opacity: 0;
 }
 a.button svg g line,
 a.button svg g polyline,
@@ -282,8 +294,9 @@ a.button:hover svg g circle {
   color: white;
   text-align: center;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  margin-top: 30%;
 }
 
 #preloader {
@@ -292,7 +305,7 @@ a.button:hover svg g circle {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2c3e50;
+  background: #041f5f;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
