@@ -47,32 +47,29 @@ var geentest = 0;
 
 
 // typing effect
-// var i = 0;
-// var txt =
-// 'Welkom!  '+
-// 'Op deze website nemen we je mee op reis in de wereld van genetica. ' +
-// 'Allereerst even terug naar de kern. Wat is DNA? en wat kun je met DNA? ' +
-// 'Dit en nog andere vragen die voorbijkomen in dit verhaal over jou. ' +
-// 'De informatie op de website is met zorg geschreven voor meer informatie zie de bronnen. '
-//
-// var speed = 80;
+var i = 0;
+var txt =
+'Welkom in de wereld van genetica  ';
 
-// document.getElementById('start-welkomtekst').onclick = typeWriter();
 
-//   function typeWriter() {
-//   if (i < txt.length) {
-//     document.getElementById("typedemo").innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-//   }
-// }
-//
-// function revealInfoblock() {
-//   var infoblock = $('#begininfoblock');
-//   infoblock.animate({
-//     opacity: '1'
-//   }, 500);
-// }
-//
-// setTimeout("revealInfoblock()", 1000);
-// setTimeout("typeWriter()", 1500);
+var speed = 80;
+
+document.getElementById('start-welkomtekst').onclick = typeWriter();
+
+  function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typedemo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+function revealInfoblock() {
+  var infoblock = $('#begininfoblock');
+  infoblock.animate({
+    opacity: '1'
+  }, 500);
+}
+
+setTimeout("revealInfoblock()", 1000);
+setTimeout("typeWriter()", 1500);

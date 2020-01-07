@@ -88,7 +88,12 @@ div#scrollbtn.demo {
 	width: 960px;
 	position: relative;
 }
-
+#titel-tekst{
+  margin-top: 12%;
+}
+.titel-tekst-kop{
+  font-size: 65px;;
+}
 h1{
 	font-size: 4em;
 }
