@@ -474,6 +474,9 @@ div.infoblock h1{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+  
   }
 
   .section#section0 .fp-tableCell{

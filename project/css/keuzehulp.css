@@ -249,9 +249,14 @@ h1{
   background-color: #03205f;
   overflow: scroll;
   cursor: pointer;
-
+  font-size: 22px;;
   display: none;
-  z-index: 101;
+  z-index: 100;
+}
+.popup-weetje:hover{
+  -webkit-animation-duration: 4s;
+  right: 47%;
+
 }
 .overlay-dark{
   width: 100%;
@@ -497,7 +502,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 input[type="checkbox"]:checked  + label {
-  color: #ff6a3d;
+  /* color: #ff6a3d; */
 
   }
 
@@ -505,6 +510,8 @@ input[type="checkbox"]:checked  + label {
 #submit-btn {
   margin-top: 18%;
   margin-left: 50%;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 #res-btn {
   margin-left: 280%;
@@ -674,7 +681,7 @@ a.button:hover svg g circle {
 
 .start-popup{
   width: 0%; height: 90%;
-  background-color: #364275;
+  background-color: #148153;
   position: absolute;
   bottom: 0;
   left: 40%;
@@ -696,21 +703,25 @@ a.button:hover svg g circle {
 }
 
 #load-in{
-  font-size: 0.9em;
+  /* font-size: 0.9em; */
   color: white;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin: 10%;
   opacity: 0;
   line-height: 25px;
   transition: all 0.2s;
+
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-left: 10%;
 }
 
 .submit-btn1{
   display: none;
   position: relative;
   text-align: right;
-  font-weight: bold;
-  letter-spacing: 1px;
+
+
 
 }
 

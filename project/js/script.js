@@ -73,3 +73,6 @@ function revealInfoblock() {
 
 setTimeout("revealInfoblock()", 1000);
 setTimeout("typeWriter()", 1500);
+
+
+// slider animatie

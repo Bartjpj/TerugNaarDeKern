@@ -160,14 +160,22 @@ $('.overlay-dark').click(function() {
   $('.popup-weetje').css('display', 'none');
 });
 
-$('.popup-vraag').click(function() {
+$('.popup-weetje').click(function() {
   $('.popup-vraag').css('z-index', '101');
   $('.popup-weetje').css('z-index', '100');
+ 
+  if ($('.popup-weetje').css('right') == '40%'){
+    $('.popup-weetje').css('right', '60%');
+  }else {
+    $('.popup-weetje').css('right', '40%');
+  }
 });
-$('.popup-weetje').click(function() {
-  $('.popup-vraag').css('z-index', '100');
-  $('.popup-weetje').css('z-index', '101');
-});
+
+// $('.popup-weetje').click(function() {
+//   $('.popup-vraag').css('z-index', '101');
+//   $('.popup-weetje').css('z-index', '100');
+//   $('.popup-weetje').css('right', '60%');
+// });
 
 $('.button').click(function() {
   $('.popup-vraag').css('display', 'none');
