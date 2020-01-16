@@ -163,7 +163,7 @@ $('.overlay-dark').click(function() {
 $('.popup-weetje').click(function() {
   $('.popup-vraag').css('z-index', '101');
   $('.popup-weetje').css('z-index', '100');
- 
+
   if ($('.popup-weetje').css('right') == '40%'){
     $('.popup-weetje').css('right', '60%');
   }else {
@@ -283,12 +283,14 @@ $('input[type="checkbox"]').on('change', function() {
     } else {
       $('.chrom18').css({ fill: "#fff" });
     }
-    if(  $('input[name="group19[]"]').is(':checked') ) {
+    if(  $('input[name="group19n1[]"]').is(':checked') || $('input[name="group19n2[]"]').is(':checked') || $('input[name="group19n3[]"]').is(':checked') || $('input[name="group19n4[]"]').is(':checked') || $('input[name="group19n5[]"]').is(':checked') || $('input[name="group19n6[]"]').is(':checked') || $('input[name="group19n7[]"]').is(':checked') ) {
       $('.chrom19').css({ fill: "#E94C4C" });
     } else {
       $('.chrom19').css({ fill: "#fff" });
     }
-    if(  $('input[name="group20[]"]').is(':checked') ) {
+
+
+    if(  $('input[name="group20n1[]"]').is(':checked') || $('input[name="group20n2[]"]').is(':checked') || $('input[name="group20n3[]"]').is(':checked') || $('input[name="group20n4[]"]').is(':checked') || $('input[name="group20n5[]"]').is(':checked') || $('input[name="group20n6[]"]').is(':checked') || $('input[name="group20n7[]"]').is(':checked') ) {
       $('.chrom20').css({ fill: "#E94C4C" });
     } else {
       $('.chrom20').css({ fill: "#fff" });
@@ -344,7 +346,7 @@ $("document").ready(function() {
   }
   setTimeout(function(){
     $('#load-in').css('opacity', '1');
-    $('.submit-btn1').css('display', 'block');    
+    $('.submit-btn1').css('display', 'block');
   }, 700);
 });
 $.fn.rangeslider = function(options) {
@@ -392,4 +394,3 @@ $('.submit-btn1').click(function(){
     $('.start-popup').css('display', 'none');
   }, 1000);
 });
-
