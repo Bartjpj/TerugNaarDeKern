@@ -22,49 +22,53 @@ if(antwoord1 > antwoord2 && antwoord1 > antwoord3){
   $('.klinisch-title').css('display', 'visible');
   $('.commercieel-title').css('display', 'none');
 
-
   $('.geentest-title').css('display', 'none');
-  $('.informatieblok2').css('display', 'none');
-  $('.informatieblok3').css('display', 'none');
+  $('.informatieblok2').css('visibility', 'none');
+  $('.informatieblok3').css('visibility', 'none');
+}
 
-}else if(antwoord3 > antwoord1 && antwoord3 > antwoord2){
+else if(antwoord3 > antwoord1 && antwoord3 > antwoord2){
   $(".informatieblok3").css('visibility', 'visible');
   $('.geentest-title').css('display', 'visible');
   $('.commercieel-title').css('display', 'none');
   $('.klinisch-title').css('display', 'none');
 
-  $('.informatieblok1').css('display', 'none');
-  $('.informatieblok2').css('display', 'none');
-}else if (antwoord1 == antwoord2 || antwoord2 == antwoord3){
-  $(".informatieblok2").css('visibility', 'visible');
-  $('.informatieblok1').css('display', 'none');
-  $('.informatieblok3').css('display', 'none');
-  $('.resul').css('display', 'visible');
-
-  $('.commercieel-title').css('display', 'visible');
-  $('.klinisch-title').css('display', 'none');
-  $('.geentest-title').css('display', 'none');
-
+  $('.informatieblok1').css('visibility', 'none');
+  $('.informatieblok2').css('visibility', 'none');
 }
+
 else if (antwoord2 > antwoord1 && antwoord2 > antwoord3){
   $(".informatieblok2").css('visibility', 'visible');
-  $('.informatieblok1').css('display', 'none');
-  $('.informatieblok3').css('display', 'none');
+  $('.informatieblok1').css('visibility', 'none');
+  $('.informatieblok3').css('visibility', 'none');
 
   $('.commercieel-title').css('display', 'visible');
   $('.klinisch-title').css('display', 'none');
   $('.geentest-title').css('display', 'none');
+}
+
+else if(antwoord1 == 0 && antwoord2 == 0 && antwoord3 == 0){
+  $(".informatieblok3").css('visibility', 'visible');
+  $('.resul').css('visibility', 'visible');
+  $('.geentest-title').css('display', 'visible');
+  $('.commercieel-title').css('display', 'none');
+  $('.klinisch-title').css('display', 'none');
+
+  $('.informatieblok1').css('visibility', 'none');
+  $('.informatieblok2').css('visibility', 'none');
 
 }
-// else{
-//   $(".informatieblok3").css('visibility', 'visible');
-//   $('.geentest-title').css('display', 'visible');
-//   $('.commercieel-title').css('display', 'none');
-//   $('.klinisch-title').css('display', 'none');
-//
-//   $('.informatieblok1').css('display', 'none');
-//   $('.informatieblok2').css('display', 'none');
-// }
+
+else if (antwoord1 == antwoord2 || antwoord2 == antwoord3){
+  $(".informatieblok3").css('visibility', 'none');
+  $('.informatieblok2').css('visibility', 'none');
+  $('.informatieblok1').css('visibility', 'visible');
+  $('.resul').css('display', 'visible');
+
+  $('.klinisch-title').css('display', 'visible');
+  $('.commercieel-title').css('display', 'none');
+  $('.geentest-title').css('display', 'none');
+}
 
 
 $('.klinisch-title').click(function (){
@@ -99,6 +103,7 @@ $('.commercieel-title').click(function (){
       $('.informatieblok3').css('opacity', '0');
   },100);
 });
+
 $('.geentest-title').click(function (){
   $('.informatieblok1').css('display', 'none');
   $('.informatieblok2').css('display', 'none');
