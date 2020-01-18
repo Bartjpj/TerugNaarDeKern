@@ -3,7 +3,14 @@ body {
     font: normal 400 20px/1 'Josefin Sans', sans-serif;
     overflow: hidden;
 }
-.resul{
+
+.resul1 {
+  font-size: 60px;
+}
+.resul2 {
+  font-size: 60px;
+}
+.resul3 {
   font-size: 60px;
 }
 .bottom-nav{
@@ -101,7 +108,7 @@ opacity: 1;
 
   cursor: pointer;
   transition: background-color 0.7s;
-  
+
 }
 .klinisch-title{
   background-color: #ee5052;
@@ -438,5 +445,5 @@ a.button:hover svg g circle {
     clip: rect(0, 300px, 100px, 0);
     opacity:0;
  }
-  
+
 }
