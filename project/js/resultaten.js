@@ -1,6 +1,6 @@
 
 $(window).ready(function() { // makes sure the whole site is loaded
-  console.log('resultaten.js is ingeladen');
+  // console.log('resultaten.js is ingeladen');
 // preload start
   $("#status").fadeOut(); // will first fade out the loading animation
   $("#preloader").delay(3500).fadeOut("slow"); // will fade out the white DIV that covers the website.
@@ -9,13 +9,13 @@ $(window).ready(function() { // makes sure the whole site is loaded
 // Animated CSS preloader from http://tobiasahlin.com/spinkit/
 // Excellent preloader example found here: http://ismet.me/index.htm
 // preload end
-console.log('resultaten.js is ingeladen');
+// console.log('resultaten.js is ingeladen');
 var antwoord1 = localStorage.getItem("antwoord1");
 var antwoord2 = localStorage.getItem("antwoord2");
 var antwoord3 = localStorage.getItem("antwoord3");
-console.log(antwoord1);
-console.log(antwoord2);
-console.log(antwoord3);
+// console.log(antwoord1);
+// console.log(antwoord2);
+// console.log(antwoord3);
 
 if(antwoord1 > antwoord2 && antwoord1 > antwoord3){
   $('.klinisch-title').css('display', 'visible');

@@ -1,4 +1,4 @@
-console.log('keuzehulp_data.js is ingeladen');
+// console.log('keuzehulp_data.js is ingeladen');
 
 //huisarts
 var antwoord1 = 0;
@@ -115,27 +115,27 @@ $('input[type="checkbox"]').on('change', function() {
 
   var antwoord1 = huisarts1 + huisarts2 + huisarts3 + huisarts4 + huisarts5 + huisarts6 + huisarts7 + huisarts8 + huisarts9 + huisarts10 + huisarts11 + huisarts12 + huisarts13 + huisarts14 + huisarts15 + huisarts16 + huisarts17 + huisarts18 + huisarts19n1 + huisarts19n2 + huisarts19n3 + huisarts19n4 + huisarts19n5 + huisarts20n1 + huisarts20n2 + huisarts20n3 + huisarts20n4 + huisarts20n5 + huisarts21 + huisarts22 + huisarts23;
 
-  console.log('antwoord1',antwoord1);
+  // console.log('antwoord1',antwoord1);
 
 
   var antwoord2 = commercieel1 + commercieel2 + commercieel3 + commercieel4 + commercieel5 + commercieel6 + commercieel7 + commercieel8 + commercieel9 + commercieel10 + commercieel11 + commercieel12 + commercieel13 + commercieel14 + commercieel15 + commercieel16 + commercieel17 + commercieel18 + commercieel19n1 + commercieel19n2 + commercieel19n3 + commercieel19n4 + commercieel19n5 + commercieel20n1 + commercieel20n2 + commercieel20n3 + commercieel20n4 + commercieel20n5 + commercieel21 + commercieel22 + commercieel23;
 
-  console.log('antwoord2',antwoord2);
+  // console.log('antwoord2',antwoord2);
 
   var antwoord3 = geentest1 + geentest2 + geentest3 + geentest4 + geentest5 + geentest6 + geentest7 + geentest8 + geentest9 + geentest10 + geentest11 + geentest12 + geentest13 + geentest14 + geentest15 + geentest16 + geentest17 + geentest18 + geentest19 + geentest20 + geentest21 + geentest22 + geentest23;
 
-  console.log('antwoord3',antwoord3);
+  // console.log('antwoord3',antwoord3);
 
   localStorage.setItem("antwoord1", antwoord1); //It's saved!
   antwoord1 = localStorage.getItem("antwoord1"); //Let's grab it and save it to a variable
-  console.log('localstorage antwoord1',antwoord1); //Logs "Hello World!"
+  // console.log('localstorage antwoord1',antwoord1); //Logs "Hello World!"
 
   localStorage.setItem("antwoord2", antwoord2); //It's saved!
   antwoord1 = localStorage.getItem("antwoord2"); //Let's grab it and save it to a variable
-  console.log('localstorage antwoord2',antwoord2); //Logs "Hello World!"
+  // console.log('localstorage antwoord2',antwoord2); //Logs "Hello World!"
 
   localStorage.setItem("antwoord3", antwoord3); //It's saved!
   antwoord1 = localStorage.getItem("antwoord3"); //Let's grab it and save it to a variable
-  console.log('localstorage antwoord3',antwoord3); //Logs "Hello World!"
+  // console.log('localstorage antwoord3',antwoord3); //Logs "Hello World!"
 
 });
