@@ -7,10 +7,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- <script defer src="js/script.js"></script> -->
   <script defer src="js/resultaten.js"></script>
+  <script defer src="js/genPDF.js"></script>
   <!-- <link rel="stylesheet" type="text/css" href="css/algemeen.css" /> -->
   <link rel="icon" href="imgs/dna.ico" type="image/gif" sizes="16x16">
   <link rel="stylesheet" href="css/resultaat.css">
-  <title>Adviespagina</title>
+  <!-- <title>Adviespagina</title> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
 </head>
 <body>
 
@@ -123,21 +125,17 @@
             </div>
             <p class="resul3"> Aan de hand van de vragen maken wij op dat u een niet tot lage interesse heeft om een DNA-test af te nemen.</p>
         </div>
-      </div>
+        
+        <div class="informatieblok4">
+        <button id="submit3">
+            <img class="pdf"  src="imgs/resultatenpag/pdf-icon.svg">   
+        </button>
+        <p class="resul4">Bekijk PDF met ingevulde antwoorden</p> 
+    </div>
 
     </div>
 
   </div>
-
-
-  <div id="preloader">
-      <div class="loader-tekst">
-        <div>
-        Resultaten worden verwerkt
-      </div>
-      </div>
-      <div class="pulse"></div>
-    </div>
 
 
 </body>

@@ -150,3 +150,4 @@ setTimeout("typeWriter()", 1500);
 
 
 })
+

@@ -6,7 +6,7 @@
  *{ box-sizing: border-box; user-select: none; }
 
 body {
-  background-color: whitesmoke;
+  background-color: #e4f4f3;
   color: black;
   overflow: hidden;
   font : normal 400 20px/1 'Josefin Sans', sans-serif;
@@ -601,82 +601,98 @@ a.button:hover svg g circle {
   stroke-dashoffset: 200;
 }
 /* svg */
-
+.chrom1, .chrom2, .chrom3, .chrom4, 
+.chrom5, .chrom6, .chrom7, .chrom8 ,
+.chrom9 , .chrom10, 
+.chrom11, .chrom12, .chrom13, .chrom14, 
+.chrom15, .chrom16, .chrom17, .chrom18 ,
+.chrom19 , .chrom20 ,
+.chrom21, .chrom22, .chrom23    {
+  fill:#adadada1;
+  
+}
+.flex-item:hover {
+  transform: scale(1.2);
+}
+.flex-item {
+  transition: all 1s;
+  transform-origin: 50% 50%;
+}
 .chrom1  {
-  fill:#fff;
+
 }
 .chrom2  {
-  fill:#fff;
+
 }
 .chrom3  {
-  fill:#fff;
+
 }
 .chrom4  {
-  fill:#fff;
+
 }
 .chrom5  {
-  fill:#fff;
+
 }
 .chrom6  {
-  fill:#fff;
+ 
 }
 .chrom7  {
-  fill:#fff;
+
 }
 .chrom8  {
-  fill:#fff;
+
 }
 .chrom9  {
-  fill:#fff;
+  
 }
 .chrom10  {
-  fill:#fff;
+  
 }
 .chrom11  {
-  fill:#fff;
+  
 }
 .chrom12  {
-  fill:#fff;
+
 }
 .chrom13  {
-  fill:#fff;
+ 
 }
 .chrom14  {
-  fill:#fff;
+  
 }
 .chrom15  {
-  fill:#fff;
+  
 }
 .chrom16  {
-  fill:#fff;
+ 
 }
 .chrom17  {
-  fill:#fff;
+
 }
 .chrom18  {
-  fill:#fff;
+
 }
 .chrom19  {
-  fill:#fff;
+
 }
 .chrom20  {
-  fill:#fff;
+
 }
 .chrom21  {
-  fill:#fff;
+ 
 }
 .chrom22  {
-  fill:#fff;
+
 }
 .chrom23  {
-  fill:#fff;
+
 }
 .cls-2, .cls-3 {
   stroke: none;
 }
 
 .cls-3 {
-  fill: #707070;
+  fill: #808080;
 }
 
 .start-popup{

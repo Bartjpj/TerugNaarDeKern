@@ -21,6 +21,21 @@ $('input[type="checkbox"]').on('change', function() {
 
   if($('#v1a1').is(':checked')){huisarts1=1; commercieel1=1;geentest1=0;} else if($('#v1a1').not(':checked')){huisarts1=0; commercieel1=0;}
   if($('#v1a2').is(':checked')){huisarts1=0; commercieel1=0;geentest1=1;} else if($('#v1a2').not(':checked')){geentest1=0;}
+  // var coffee=document.getElementsByName('test7');
+  // var z;
+  // var txt="";
+  // for (z = 0; z < coffee.length; z++) {
+  //   if (coffee[z].checked) {
+  //     txt = txt + coffee[z].value + " ";
+  //   }
+  //   alert(txt);
+  // }
+  // // var checkedValue = $('.btn-strongly-agree btnv1:checked').val();
+  // console.log(txt)
+
+  // var label = $("input[type='checkbox']:checked:last").next().text(); 
+  // label = $.trim(label);
+  // alert(label);
 
   if($('#v2a1').is(':checked')){huisarts2=1; commercieel2=1;geentest2=0;} else if($('#v2a1').not(':checked')){huisarts2=0; commercieel2=0;}
   if($('#v2a2').is(':checked')){huisarts2=0; commercieel2=0;geentest2=1;} else if($('#v2a2').not(':checked')){geentest2=0;}

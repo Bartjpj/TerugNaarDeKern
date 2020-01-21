@@ -3,7 +3,21 @@ body {
     font: normal 400 20px/1 'Josefin Sans', sans-serif;
     overflow: hidden;
 }
+.pdf {
+  width: 70px;
+}
+#submit3{
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
 
+#content2 {
+  font-size: 40px;
+}
 .resul1 {
   font-size: 60px;
 }
@@ -12,6 +26,9 @@ body {
 }
 .resul3 {
   font-size: 60px;
+}
+.resul4 {
+  font-size: 20px;
 }
 .bottom-nav{
   width: 100%;
@@ -124,7 +141,7 @@ opacity: 1;
 .informatieblok1{
 
   width: auto;
-  padding: 1px 30px 10px 30px;
+  padding: 1px 25px 10px 25px;
   clear: both;
   display: block;
   opacity: 1;
@@ -133,7 +150,7 @@ opacity: 1;
 }
 .informatieblok2{
   width: auto;
-  padding: 1px 30px 10px 30px;
+  padding: 1px 25px 10px 25px;
   clear: both;
   display: block;
   opacity: 1;
@@ -142,12 +159,21 @@ opacity: 1;
 }
 .informatieblok3{
   width: auto;
-  padding: 1px 30px 10px 30px;
+  padding: 1px 25px 10px 25px;
   clear: both;
   display: block;
   opacity: 1;
   transition: opacity 0.5s;
   visibility: hidden;
+}
+.informatieblok4{
+  font-size: 11px;
+  width: 30%;
+  padding: 1px 25px 10px 25px;
+  clear: both;
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 .informatieblok1, .informatieblok2, .informatieblok3{
   font-size: 17px;
