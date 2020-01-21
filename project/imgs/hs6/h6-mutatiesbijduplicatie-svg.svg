@@ -55,7 +55,7 @@
       }
 
       .cls-11 {
-        stroke: #000b22;
+        stroke: #707070;
         stroke-linejoin: round;
         stroke-width: 7px;
       }
