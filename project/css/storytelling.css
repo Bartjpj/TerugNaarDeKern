@@ -92,14 +92,32 @@ div#scrollbtn.demo {
   margin-top: 12%;
 }
 .titel-tekst-kop{
-  font-size: 65px;;
+  font-size: 65px;
+}
+.fade-tekst{
+  opacity: 0;
+  transition: all 0.5s;
 }
 h1{
 	font-size: 4em;
 }
+
+h2{
+  font-size: 2em;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  /* line-height: 60px; */
+  letter-spacing: 2px;
+}
 p{
 	font-size: 2em;
   color: white;
+}
+.diff-color{
+  color: #FF5252;
+  font-size: 115%;
 }
 
 
@@ -416,7 +434,7 @@ a#linktext{
 }
 
 .extra-info{
-  color: lightgrey;
+  color: #7B7B7B;
 }
 
 #naam{
@@ -475,8 +493,8 @@ div.infoblock h1{
     height: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    
-  
+
+
   }
 
   .section#section0 .fp-tableCell{
