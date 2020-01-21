@@ -11,6 +11,9 @@ var specialElementHandlers = {
 $('#submit3').click(function () { 
 
     labeltest1 = localStorage.getItem("antw1");
+    if (labeltest1 == null){
+        console.log('labeltest1 IS LEEG');
+    }
     labeltest2 = localStorage.getItem("antw2");
     labeltest3 = localStorage.getItem("antw3");
     labeltest4 = localStorage.getItem("antw4");
@@ -36,7 +39,6 @@ $('#submit3').click(function () {
     // console.log('1 '+labeltest1,'2 '+labeltest2,'3 '+ labeltest3+ '4 '+labeltest4, '5'+labeltest5, '6 '+ labeltest6, '7 '+labeltest7,'8 '+labeltest8,
     // '9 '+labeltest9, '10 '+labeltest10, '11 '+labeltest11,'12 '+labeltest12,'13 '+ labeltest13, '14 '+labeltest14,'15 '+ labeltest15, '16 '+labeltest16, '17 '+labeltest17,'18 '+ labeltest18,
     // '19 '+labeltest19, '20'+labeltest20,'21 '+ labeltest21,'22 '+ labeltest22, '23 '+labeltest23)
-    console.log( '19 ='+labeltest19, '20='+labeltest20,)
 
     doc2.fromHTML($('#informatieblok4').html(), 15, 15, { 
         'width': 190, 

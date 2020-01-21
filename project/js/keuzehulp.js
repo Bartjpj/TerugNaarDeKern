@@ -322,15 +322,19 @@ $('.overlay-dark').click(function() {
   $('.popup-weetje').css('display', 'none');
 });
 
-$('.popup-weetje').click(function() {
-  $('.popup-vraag').css('z-index', '101');
-  $('.popup-weetje').css('z-index', '100');
+$('.popup-vraag').click(function() {
 
-  if ($('.popup-weetje').css('right') == '40%'){
-    $('.popup-weetje').css('right', '60%');
-  }else {
-    $('.popup-weetje').css('right', '40%');
-  }
+    // $('.popup-vraag').css('right', '11%');
+  
+  // $('.popup-vraag').css('z-index', '101');
+  // $('.popup-weetje').css('z-index', '100');
+
+  // if ($('.popup-vraag').css('right') == '20%'){
+  //   $('.popup-vraag').css('right', '20%');
+  // }else {
+  //   $('.popup-vraag').css('right', '11%');
+  // }
+
 });
 
 // $('.popup-weetje').click(function() {
@@ -346,7 +350,29 @@ $('.button').click(function() {
   $('.popup-weetje').css('display', 'none');
 });
 
-
+localStorage.setItem("antw1", '-'); //It's saved!
+localStorage.setItem("antw2", '-');
+localStorage.setItem("antw3", '-'); //It's saved!
+localStorage.setItem("antw4", '-');
+localStorage.setItem("antw5", '-'); //It's saved!
+localStorage.setItem("antw6", '-');
+localStorage.setItem("antw7", '-');
+localStorage.setItem("antw8", '-');
+localStorage.setItem("antw9", '-');
+localStorage.setItem("antw10", '-');
+localStorage.setItem("antw11", '-'); //It's saved!
+localStorage.setItem("antw12", '-');
+localStorage.setItem("antw13", '-'); //It's saved!
+localStorage.setItem("antw14", '-');
+localStorage.setItem("antw15", '-'); //It's saved!
+localStorage.setItem("antw16", '-');
+localStorage.setItem("antw17", '-');
+localStorage.setItem("antw18", '-');
+localStorage.setItem("antw19", '-');
+localStorage.setItem("antw20", '-');
+localStorage.setItem("antw21", '-'); //It's saved!
+localStorage.setItem("antw22", '-');
+localStorage.setItem("antw23", '-'); //It's saved!
 
 $('input[type="checkbox"]').on('change', function() {
   $('input[name="' + this.name + '"]').not(this).prop('checked', false);
@@ -599,8 +625,7 @@ $('input[type="checkbox"]').on('change', function() {
       if(  $('input[name="group20n1[]"]').is(':checked')){
       var antw20n1 = $("input[name='group20n1[]']:checked:last").next().text(); 
       antw20n1 = $.trim(antw20n1);
-      }
-      if(  $('input[name="group20n2[]"]').is(':checked')){
+      }if(  $('input[name="group20n2[]"]').is(':checked')){
       var antw20n2 = $("input[name='group20n2[]']:checked:last").next().text(); 
       antw20n2 = $.trim(antw20n2);
       }
