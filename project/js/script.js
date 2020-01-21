@@ -15,7 +15,6 @@ function revealspeechbubbleafter() {
 // }
 
 setTimeout("revealspeechbubbleafter()", 500);
-setTimeout("loopskipbtn()", 1);
 
 
 
@@ -54,9 +53,7 @@ var txt =
 
 var speed = 80;
 
-document.getElementById('start-welkomtekst').onclick = typeWriter();
-
-  function typeWriter() {
+function typeWriter() {
   if (i < txt.length) {
     document.getElementById("typedemo").innerHTML += txt.charAt(i);
     i++;
@@ -73,6 +70,7 @@ function revealInfoblock() {
 
 setTimeout("revealInfoblock()", 1000);
 setTimeout("typeWriter()", 1500);
-
-
+setTimeout(function(){
+  $('.fade-tekst').css('opacity', '1');
+}, 4500);
 // slider animatie
