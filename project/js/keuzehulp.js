@@ -320,6 +320,7 @@ $('.overlay-dark').click(function() {
   $('.popup-vraag').css('display', 'none');
   $('.overlay-dark').css('display', 'none');
   $('.popup-weetje').css('display', 'none');
+  $('.check-popup').css('display', 'none');
 });
 
 $('.popup-vraag').click(function() {
@@ -349,6 +350,8 @@ $('.button').click(function() {
   $('.overlay-dark').css('display', 'none');
   $('.popup-weetje').css('display', 'none');
 });
+
+
 
 localStorage.setItem("antw1", '-'); //It's saved!
 localStorage.setItem("antw2", '-');
@@ -737,8 +740,36 @@ $('input[type="checkbox"]').on('change', function() {
 
 
 });
+//slider check pop up
+$('#res-btn').click(function() {
+  
 
-//slider
+  if(  $('input[name="group1[]"]').is(':checked') && $('input[name="group2[]"]').is(':checked') && $('input[name="group3[]"]').is(':checked') && $('input[name="group4[]"]').is(':checked')
+  && $('input[name="group5[]"]').is(':checked') && $('input[name="group6[]"]').is(':checked') && $('input[name="group7[]"]').is(':checked') && $('input[name="group8[]"]').is(':checked')
+  && $('input[name="group9[]"]').is(':checked') && $('input[name="group10[]"]').is(':checked') && $('input[name="group11[]"]').is(':checked') && $('input[name="group12[]"]').is(':checked')
+  && $('input[name="group13[]"]').is(':checked') && $('input[name="group14[]"]').is(':checked') && $('input[name="group15[]"]').is(':checked') && $('input[name="group16[]"]').is(':checked')
+  && $('input[name="group17[]"]').is(':checked') && $('input[name="group18[]"]').is(':checked') 
+  && ($('input[name="group19n1[]"]').is(':checked') || $('input[name="group19n2[]"]').is(':checked') || $('input[name="group19n3[]"]').is(':checked') || $('input[name="group19n4[]"]').is(':checked') || $('input[name="group19n5[]"]').is(':checked') || $('input[name="group19n6[]"]').is(':checked') || $('input[name="group19n7[]"]').is(':checked') ) 
+  && ( $('input[name="group20n1[]"]').is(':checked') || $('input[name="group20n2[]"]').is(':checked') || $('input[name="group20n3[]"]').is(':checked') || $('input[name="group20n4[]"]').is(':checked') || $('input[name="group20n5[]"]').is(':checked') || $('input[name="group20n6[]"]').is(':checked') || $('input[name="group20n7[]"]').is(':checked') )
+  && $('input[name="group21[]"]').is(':checked') && $('input[name="group22[]"]').is(':checked') && $('input[name="group23[]"]').is(':checked')
+  ) {
+    window.location = 'resultaatpagina.html';
+  }else {
+    $('.overlay-dark').css('display', 'block');
+    $('.check-popup').css('display', 'block');
+  }
+
+ 
+
+});
+$('#check-btn1').click(function() {
+  $('.check-popup').css('display', 'none');
+});
+$('#check-btn2').click(function() {
+  window.location = 'resultaatpagina.html';
+});
+
+//slider start pop up
 $("document").ready(function() {
   $(".slider").rangeslider();
   $('.overlay-dark-startup').css('opacity', '0.7');
@@ -798,3 +829,8 @@ $('.submit-btn1').click(function(){
     $('.start-popup').css('display', 'none');
   }, 1000);
 });
+
+
+
+
+

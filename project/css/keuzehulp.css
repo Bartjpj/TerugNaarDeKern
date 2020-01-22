@@ -197,6 +197,8 @@ h1{
   font-size: 3vh;
 }
 
+
+
 /* --------------------- POPUP VRAAG */
 .popup-vraag{
   width: 38%; height: 85%;
@@ -556,6 +558,15 @@ a.button svg g circle {
   fill: none;
   stroke: rgba(255, 82, 82, 1);
 }
+.check-btn svg g circle {
+  opacity: 0;
+}
+.check-btn svg g line,
+.check-btn svg g polyline,
+.check-btn svg g circle {
+  fill: none;
+  /* stroke: rgba(255, 82, 82, 1); */
+}
 .overlay-btn{
   margin-top: 1%;
   margin-left: 97%;
@@ -692,14 +703,39 @@ a.button:hover svg g circle {
 }
 
 .start-popup{
-  width: 0%; height: 90%;
+  width: 40%; height: 90%;
   background-color: #148153;
   position: absolute;
   bottom: 0;
   left: 40%;
   z-index: 104;
   transition: width 0.5s;
+
 }
+
+.check-popup{
+  width: 40%; height: 55%;
+  background-color: #03205f;
+  position: absolute;
+  bottom: 0;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  left: 30%;
+  z-index: 104;
+  transition: width 0.5s;
+  display: none;
+
+}
+/* popup check */
+.check-text {
+  font-size: 30px;
+  margin: 10%;
+  color: white;
+}
+.next-buttons{
+  margin-left: 50%;
+}
+
 
 .overlay-dark-startup{
   width: 100%;
