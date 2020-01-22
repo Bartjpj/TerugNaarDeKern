@@ -597,12 +597,22 @@ $('input[type="checkbox"]').on('change', function() {
 
       if(  $('input[name="group19n6[]"]').is(':checked')){
       var antw19n6 = $("input[name='group19n6[]']:checked:last").next().text(); 
-      antw19n1= ''; antw19n2 = ''; antw19n3 =''; antw19n4 =''; antw19n5 =''; antw19n7 ='';
+      antw19n1= ''; 
+      antw19n2 = ''; 
+      antw19n3 =''; 
+      antw19n4 =''; 
+      antw19n5 =''; 
+      antw19n7 ='';
       antw19n6 = $.trim(antw19n6);
       }
       if(  $('input[name="group19n7[]"]').is(':checked')){
         var antw19n7 = $("input[name='group19n7[]']:checked:last").next().text(); 
-        antw19n1= ''; antw19n2 = ''; antw19n3 =''; antw19n4 =''; antw19n5 =''; antw19n6 ='';
+        antw19n1= ''; 
+        antw19n2 = ''; 
+        antw19n3 =''; 
+        antw19n4 =''; 
+        antw19n5 =''; 
+        antw19n6 ='';
         antw19n7 = $.trim(antw19n7);
         }
 
@@ -668,6 +678,7 @@ $('input[type="checkbox"]').on('change', function() {
       localStorage.setItem("antw20", antw20n1+' '+ antw20n2+' '+antw20n3+' '+antw20n4+' '+antw20n5+' '+antw20n6+antw20n7); //It's saved!
       labeltest20 = localStorage.getItem("antw20");
       console.log( '20 ='+labeltest20)
+      
     } else {
       $('.chrom20').css({ fill: "#adadada1" });
       antw20 = '-';
