@@ -801,6 +801,9 @@ a.button:hover svg g circle {
     height: 100%;
     left: 0;
   }
+  .html{
+    /* height: 200%; */
+  }
 
   #load-in{
     font-size: 14px;
@@ -821,6 +824,27 @@ a.button:hover svg g circle {
   }
   .next-buttons{
     margin-left: 0%;
+  }
+  .popup-weetje{
+    width: 85%;
+    height: 85%;
+    left: 0;
+  }
+  .popup-vraag{
+    width: 87%;
+    height: 80%;
+    left: 10%;
+
+
+  }
+  .popup-vraag:hover{
+    width: 87%;
+    height: 80%;
+    left: 10%;
+    z-index: 104;
+    overflow: scroll;
+    
+
   }
 
 }
