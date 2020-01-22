@@ -4,7 +4,7 @@ var div = document.createElement('div');
 div.textContent = "gegevens";
 div.setAttribute('class', 'tooltip');
 var span = document.createElement('span');
-span.textContent = "Onze data is afkomstig van de De Nederlandse Voornamenbank van het Meertens Instituut KNAW. Zij publiceerden een bestand (uit 2010) met meer dan 500 eerste mannelijke en vrouwelijke eerste voornamen (met de Nederlandse nationaliteit en wonend in Nederland). Voor meer info zie:  www.meertens.knaw.nl/nvb";
+span.textContent = "Onze data is afkomstig van de De Nederlandse Voornamenbank van het Meertens Instituut KNAW. Zij publiceerden een bestand (uit 2010) met meer dan 500 eerste mannelijke en vrouwelijke eerste voornamen (met de Nederlandse nationaliteit en wonend in Nederland). Voor meer info zie: www.meertens.knaw.nl/nvb";
 span.setAttribute('class', 'tooltiptext');
 div.appendChild(span);
 
