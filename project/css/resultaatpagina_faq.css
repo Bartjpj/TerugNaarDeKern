@@ -3,15 +3,17 @@
 
 .faq-content {
   margin: 0 auto;
+  height: 400px;
+  overflow: scroll;
 }
 
 .faq-question {
-  padding: 20px 0;
+  padding: 18px 0;
   border-bottom: 1px dotted #ccc;
 }
 
 .panel-title {
-  font-size: 20px;
+  font-size: 18px;
   width: 100%;
   position: relative;
   margin: 0;
@@ -43,8 +45,8 @@
 
 .plus {
   position: absolute;
-  margin-left: 20px;
-  margin-top: 4px;
+  margin-left: -40px;
+  margin-top: -10px;
   z-index: 5;
   font-size: 42px;
   line-height: 100%;
@@ -70,5 +72,7 @@
   display: none;
 }
 
+
+/* https://codepen.io/praneeth_m/details/VwYVdJR */
 
 
