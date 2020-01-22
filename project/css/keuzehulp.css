@@ -271,6 +271,28 @@ h1{
   width: auto;
   height: max-content;
 }
+
+
+@media screen and (max-height: 1325px) {
+  div.keuze-aarde{
+    margin-top: -540px;
+  }
+
+  div.overlay-btn{
+    margin-top: -2%;
+  }
+}
+
+@media screen and (max-height: 1325px) {
+  div.keuze-aarde{
+    margin-top: -540px;
+  }
+
+  div.overlay-btn{
+    margin-top: -2%;
+  }
+}
+
 /* PHONE OPMAAK */
 @media only screen and (max-width: 768px) {
   body {
@@ -589,23 +611,23 @@ a.button font {
 a.button:hover {
   -webkit-transform: translateZ(0) translateX(0.5em);
           transform: translateZ(0) translateX(0.5em);
-          
+
           transform: scale(1.2);
-          
+
 }
 a.button:hover svg g circle {
   stroke-dashoffset: 200;
 }
 /* svg */
-.chrom1, .chrom2, .chrom3, .chrom4, 
+.chrom1, .chrom2, .chrom3, .chrom4,
 .chrom5, .chrom6, .chrom7, .chrom8 ,
-.chrom9 , .chrom10, 
-.chrom11, .chrom12, .chrom13, .chrom14, 
+.chrom9 , .chrom10,
+.chrom11, .chrom12, .chrom13, .chrom14,
 .chrom15, .chrom16, .chrom17, .chrom18 ,
 .chrom19 , .chrom20 ,
 .chrom21, .chrom22, .chrom23    {
   fill:#adadada1;
-  
+
 }
 .flex-item:hover {
   transform: scale(1.2);
@@ -630,7 +652,7 @@ a.button:hover svg g circle {
 
 }
 .chrom6  {
- 
+
 }
 .chrom7  {
 
@@ -639,28 +661,28 @@ a.button:hover svg g circle {
 
 }
 .chrom9  {
-  
+
 }
 .chrom10  {
-  
+
 }
 .chrom11  {
-  
+
 }
 .chrom12  {
 
 }
 .chrom13  {
- 
+
 }
 .chrom14  {
-  
+
 }
 .chrom15  {
-  
+
 }
 .chrom16  {
- 
+
 }
 .chrom17  {
 
@@ -675,7 +697,7 @@ a.button:hover svg g circle {
 
 }
 .chrom21  {
- 
+
 }
 .chrom22  {
 
