@@ -100,6 +100,7 @@ body {
 	font-size:17px;
 	padding:16px 31px;
 	text-decoration:none;
+  transition: all 0.5s ease;
   /* margin: 10%; */
 }
 .redish-naarhome:hover {
@@ -210,6 +211,7 @@ h1{
   cursor: pointer;
   display: none;
   z-index: 100;
+  transition: all 0.5s ease;
 }
 .vraag-sub-titel{
   font-size: 2vh;
@@ -248,6 +250,7 @@ h1{
   font-size: 24px;;
   display: none;
   z-index: 101;
+  overflow: hidden;
 }
 .popup-vraag:hover{
   -webkit-animation-duration: 4s;
@@ -818,7 +821,7 @@ a.button:hover svg g circle {
   }
 
   .check-popup{
-    width: 80%; 
+    width: 80%;
     height: 90%;
     left: 10%;
   }
