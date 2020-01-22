@@ -55,6 +55,16 @@ else if(antwoord1 == 0 && antwoord2 == 0 && antwoord3 == 0){
 
   $('.informatieblok1').css('display', 'none');
   $('.informatieblok2').css('display', 'none');
+}
+
+else if(antwoord1 == undefined && antwoord2 == undefined && antwoord3 == undefined){
+  $('.geentest-title').css('display', 'visible');
+  $('.resul3').css('visibility', 'visible');
+  $('.commercieel-title').css('display', 'none');
+  $('.klinisch-title').css('display', 'none');
+
+  $('.informatieblok1').css('display', 'none');
+  $('.informatieblok2').css('display', 'none');
 
 }
 
@@ -150,4 +160,3 @@ setTimeout("typeWriter()", 1500);
 
 
 })
-
