@@ -736,7 +736,7 @@ a.button:hover svg g circle {
 }
 
 .check-popup{
-  width: 40%; height: 55%;
+  width: 40%; height: 50%;
   background-color: #03205f;
   position: absolute;
   bottom: 0;
@@ -755,7 +755,7 @@ a.button:hover svg g circle {
   color: white;
 }
 .next-buttons{
-  margin-left: 50%;
+  margin-left: 10%;
 }
 
 
@@ -812,6 +812,15 @@ a.button:hover svg g circle {
   }
   a.button:hover{
     transform: scale(0.7);
+  }
+
+  .check-popup{
+    width: 80%; 
+    height: 90%;
+    left: 10%;
+  }
+  .next-buttons{
+    margin-left: 0%;
   }
 
 }
