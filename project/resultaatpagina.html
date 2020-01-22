@@ -11,6 +11,7 @@
   <!-- <link rel="stylesheet" type="text/css" href="css/algemeen.css" /> -->
   <link rel="icon" href="imgs/dna.ico" type="image/gif" sizes="16x16">
   <link rel="stylesheet" href="css/resultaat.css">
+  <link rel="stylesheet" href="css/resultaatpagina_faq.css">
   <!-- <title>Adviespagina</title> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
 </head>
@@ -21,9 +22,87 @@
 
 
   <div class="info-links">
+
+
     <h2 class="alg-title">Algemene informatie</h2>
     <div class="algemene-info">
-        <p>Op de pagina hiernaast vind u de uitkomst die het meest voor u van toepassing is.</p>
+        
+       
+
+            <div class="faq-content">
+          <div class="faq-question">
+            <input id="q1" type="checkbox" class="panel">
+            <div class="plus">+</div>
+            <label for="q1" class="panel-title">
+              Verschillende Soorten thuistesten
+            </label>
+            <div class="panel-content">
+              <p>
+                  Er zijn veel verschillende soorten thuistesten. Sommige thuistesten zeggen iets over je kans op bepaalde ziektes. Of over dragerschap van bepaalde ziektes.
+
+              </p>
+            </div>
+          </div>
+          <div class="faq-question">
+              <input id="q4" type="checkbox" class="panel">
+              <div class="plus">+</div>
+              <label for="q4" class="panel-title">
+                Hoe werken zelf DNA-testen van commericele bedrijven? 
+              </label>
+              <div class="panel-content">
+                
+                  De testen werken door speeksel of wangslijm te analyseren.
+                  Veel genetische (thuis)testen kun je online bestellen, tegen betaling.
+                  Het bedrijf stuurt een pakket op waarmee je bij jezelf wat speeksel of
+                  wangslijm kan afnemen. Dat stuur je met de post terug. In een laboratorium
+                  wordt er DNA uit gehaald, en onderzocht. 
+              
+              </div>
+            </div>
+          
+          <div class="faq-question">
+            <input id="q2" type="checkbox" class="panel">
+            <div class="plus">+</div>
+            <label for="q2" class="panel-title">
+              Bij twijfel kan het helpen om er over te praten, hierbij wat tips
+            </label>
+            <div class="panel-content">
+              
+                Blijf dicht bij uw eigen gevoel maar erken ook het gevoel van uw partner. Uiteindelijk blijft het uw beslissing.
+                Het gaat vooral om gevoelens en die zijn persoonlijk. Probeer elkaar dus niet te overtuigen. Niets is goed of fout.
+                Schrik er niet van als jullie verschillend over dingen denken. (Geen mens is nu eenmaal hetzelfde.)
+                <br><br>
+        
+                Bedenk met wie u wilt praten: een familielid of juist een vriend(in) die buiten de familie staat? Wees ervan bewust dat het doen van DNA-onderzoek ook gevolgen kan hebben voor familieleden.
+                Geef aan wat u wilt. Bijvoorbeeld om met u mee te denken, in plaats van advies of een oplossing te geven.
+                Soms vertellen anderen vooral wat zij zelf zouden doen. Leg dat dan naast u neer. Het gaat nu om een keuze die bij u past.
+               
+            
+            </div>
+          </div>
+          
+          <div class="faq-question">
+            <input id="q3" type="checkbox" class="panel">
+            <div class="plus">+</div>
+            <label for="q3" class="panel-title">
+              Dit moet je weten als u naar de klinisch geneticus gaat
+            </label>
+            <div class="panel-content">
+                Hoeft u nog niet te weten of u zich wilt laten testen.
+                Krijgt u meer te horen over de erfelijkheid van de aandoening, medische controles en behandelingen (als die mogelijk zijn).
+                Worden de kosten vergoed vanuit het basispakket. Wel geldt de eigen bijdrage en/of het eigen risico.
+                Heeft een consult geen nadelen voor uw verzekering of hypotheek 
+    
+            </div>
+          </div>
+        </div>
+        
+        
+
+
+
+
+        <!-- <p>Op de pagina hiernaast vind u de uitkomst die het meest voor u van toepassing is.</p>
         <p>Bij twijfel is het goed er over te praten
           zoals met bijvoorbeeld een vriend of familielid. Hierbij wat tips</p>
 
@@ -42,13 +121,15 @@
             Hoeft u nog niet te weten of u zich wilt laten testen.<br>
             Krijgt u meer te horen over de erfelijkheid van de aandoening, medische controles en behandelingen (als die mogelijk zijn).<br>
             Worden de kosten vergoed vanuit het basispakket. Wel geldt de eigen bijdrage en/of het eigen risico.<br>
-            Heeft een consult geen nadelen voor uw verzekering of hypotheek (zie ook erfelijkheid en verzekeringen).<br>
+            Heeft een consult geen nadelen voor uw verzekering of hypotheek (zie ook erfelijkheid en verzekeringen).<br> -->
 
             <a class="button" href="index.html"><svg><g><line x2="227.62" y1="31.28" y2="31.28"></line><polyline points="222.62 25.78 228.12 31.28 222.62 36.78"></polyline><circle cx="224.67" cy="30.94" r="30.5" transform="rotate(180 224.67 30.94) scale(1, -1) translate(0, -61) "></circle></g></svg>Meer over DNA</a>
             <br>
             <a class="button" href="keuzepagina.html"><svg><g><line x2="227.62" y1="31.28" y2="31.28"></line><polyline points="222.62 25.78 228.12 31.28 222.62 36.78"></polyline><circle cx="224.67" cy="30.94" r="30.5" transform="rotate(180 224.67 30.94) scale(1, -1) translate(0, -61)"></circle></g></svg>Terug naar de keuzehulp</a>
 
-    </div>
+    
+    
+          </div>
     <!-- <div class="bottom-nav">
 
         <div id="submit-btn1">
@@ -131,6 +212,16 @@
             <img class="pdf"  src="imgs/resultatenpag/pdf-icon.svg">   
         </button>
         <p class="resul4">Bekijk PDF met ingevulde antwoorden</p> 
+    </div>
+
+    <div id="preloader">
+      <div class="loader-tekst">Resultaten worden verwerkt</div>
+      <div class="loader-tekst">
+        <div>
+        Resultaten worden verwerkt
+      </div>
+      </div>
+      <div class="pulse"></div>
     </div>
 
     </div>
