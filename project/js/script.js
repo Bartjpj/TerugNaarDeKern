@@ -1,3 +1,4 @@
+
 function revealspeechbubbleafter() {
   var speechbubble = $('#speechbubble');
   $(speechbubble).css("visibility", "visible");
