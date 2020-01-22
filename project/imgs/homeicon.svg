@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="77.805" height="110.533" viewBox="0 0 77.805 110.533">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff5252;
+      }
+    </style>
+  </defs>
+  <path id="homeicon" class="cls-1" d="M0-45.667H77.805V64.866L38.324,33.026,0,64.866Z" transform="translate(0 45.667)"/>
+</svg>
